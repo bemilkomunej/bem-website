@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\SiteController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Jetstream\Http\Controllers\CurrentTeamController;
@@ -27,9 +28,17 @@ Route::get('/dashboard', function () {
     return redirect(route('admin.dashboard'));
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('pages.landing.menu.index');
+//});
+
+Route::get('/', [SiteController::class, 'home'])->name('home');
+Route::get('/about', [SiteController::class, 'about'])->name('about');
+Route::get('/blog', [SiteController::class, 'blog'])->name('blog');
+Route::get('/single-blog', [SiteController::class, 'singleBlog'])->name('single-blog');
+Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
+
+
 //[ 'middleware' => [],'prefix'=>'admin' ]
 //Route::name('admin.')->middleware(['auth:sanctum', 'verified'])->prefix('admin/')->group(function() {
 Route::name('admin.')->prefix('admin')->middleware(['auth:sanctum','web', 'verified'])->group(function() {
