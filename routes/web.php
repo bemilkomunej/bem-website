@@ -1,7 +1,13 @@
 <?php
 
+use App\Http\Controllers\Admin\AdditionController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\MemberController;
+use App\Http\Controllers\Admin\OffenseController;
+use App\Http\Controllers\Admin\StudentController;
+use App\Http\Controllers\Admin\StudentDetailController;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\SupportController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Jetstream\Http\Controllers\CurrentTeamController;
@@ -36,19 +42,33 @@ Route::get('/', [SiteController::class, 'home'])->name('home');
 Route::get('/about', [SiteController::class, 'about'])->name('about');
 Route::get('/blog', [SiteController::class, 'blog'])->name('blog');
 Route::get('/single-blog', [SiteController::class, 'singleBlog'])->name('single-blog');
+Route::get('/point-detail/{nim}', [SiteController::class, 'pointDetail'])->name('point-detail');
 Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
 
-
+Route::get('update-photo',function (){
+    return redirect(route('admin.profile.show'));
+})->name('profile.show');
 //[ 'middleware' => [],'prefix'=>'admin' ]
 //Route::name('admin.')->middleware(['auth:sanctum', 'verified'])->prefix('admin/')->group(function() {
 Route::name('admin.')->prefix('admin')->middleware(['auth:sanctum','web', 'verified'])->group(function() {
-    Route::post('/summernote-upload',[\App\Http\Controllers\SupportController::class,'upload'])->name('summernote_upload');
+    Route::post('/summernote-upload',[SupportController::class,'upload'])->name('summernote_upload');
     Route::view('/dashboard', "dashboard")->name('dashboard');
-    Route::resource('blog', BlogController::class);
+//    Route::resource('blog', BlogController::class);
+    Route::middleware(['checkRole:1,2'])->group(function () {
+        Route::resource('member', MemberController::class);
+    });
+    Route::resource('student', StudentController::class);
+    Route::resource('student-detail', StudentDetailController::class);
+//    Route::post('student-detail/{id}', [StudentDetailController::class, 'update'])->name('student.update');
+//    Route::post('student-detail/{id}', [StudentDetailController::class, 'destroy'])->name('student.destroy');
+    Route::resource('offense', OffenseController::class);
+    Route::resource('addition', AdditionController::class);
 //    Route::middleware(['checkRole:1']){}
-    Route::get('/user', [ UserController::class, "index" ])->name('user');
-    Route::view('/user/new', "pages.user.create")->name('user.new');
-    Route::view('/user/edit/{userId}', "pages.user.edit")->name('user.edit');
+    Route::middleware(['checkRole:1'])->group(function () {
+        Route::get('/user', [UserController::class, "index"])->name('user');
+        Route::view('/user/new', "pages.user.create")->name('user.new');
+        Route::view('/user/edit/{userId}', "pages.user.edit")->name('user.edit');
+    });
 
 
     Route::group(['middleware' => config('jetstream.middleware', ['web'])], function () {

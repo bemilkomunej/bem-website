@@ -1,25 +1,116 @@
 @php
-$links = [
+use Illuminate\Support\Facades\Auth;$links = [
     [
         "href" => "admin.dashboard",
         "text" => "Dashboard",
         "is_multi" => false,
-    ],
+    ]
+    ];
+
+if (Auth::user()->role==1) {
+    $add =
     [
-        "href" => [
+        "href" =>
+        [
+                [
+                    "section_text" => "User",
+                    "section_list" => [
+                        ["href" => "admin.user", "text" => "Data User"],
+                        ["href" => "admin.user.new", "text" => "Buat User"]
+                        ]
+                ],
+                [
+                    "section_text" => "Member BEM",
+                    "section_icon" => "fa fa-users",
+                    "section_list" => [
+                        ["href" => "admin.member.index", "text" => "Data Member BEM"],
+                        ["href" => "admin.member.create", "text" => "Tambah Member BEM"]
+                        ]
+                ],
+                [
+                    "section_text" => "Mahasiswa Baru",
+                    "section_icon" => "fa fa-users",
+                    "section_list" => [
+                        ["href" => "admin.student.index", "text" => "Data Mahasiswa Baru"],
+                        ["href" => "admin.student.create", "text" => "Tambah Mahasiswa Baru"]
+                        ]
+                ],
+                [
+                    "section_text" => "Pelanggaran",
+                    "section_icon" => "fa fa-users",
+                    "section_list" => [
+                        ["href" => "admin.offense.index", "text" => "Data Jenis Pelanggaran"],
+                        ["href" => "admin.offense.create", "text" => "Tambah Jenis Pelanggaran"]
+                        ]
+                ],
+                [
+                    "section_text" => "Kepatuhan",
+                    "section_icon" => "fa fa-users",
+                    "section_list" => [
+                        ["href" => "admin.addition.index", "text" => "Data Jenis Kepatuhan"],
+                        ["href" => "admin.addition.create", "text" => "Tambah Jenis Kepatuhan"]
+                        ]
+                ],
+            ],
+            "text" => "Admin",
+            "is_multi" => true,
+        ];
+        array_push($links, $add);
+
+    } else if (Auth::user()->role==2) {
+    $add = [
+        "href" =>
+        [
             [
-                "section_text" => "User",
-                "section_list" => [
-                    ["href" => "admin.user", "text" => "Data User"],
-                    ["href" => "admin.user.new", "text" => "Buat User"]
+            "section_text" => "Member BEM",
+            "section_icon" => "fa fa-users",
+            "section_list" => [
+                ["href" => "admin.member.index", "text" => "Data Member BEM"],
+                ["href" => "admin.member.create", "text" => "Tambah Member BEM"]
                 ]
             ]
         ],
-        "text" => "User",
+            "text" => "Manajemen BEM",
+            "is_multi" => true,
+        ];
+        array_push($links, $add);
+
+    } else if (Auth::user()->role==3) {
+    $add = [
+        "href" =>
+        [
+            [
+            "section_text" => "Mahasiswa Baru",
+            "section_icon" => "fa fa-users",
+            "section_list" => [
+                ["href" => "admin.student.index", "text" => "Data Mahasiswa Baru"],
+                ["href" => "admin.student.create", "text" => "Tambah Mahasiswa Baru"]
+                ]
+            ],
+            [
+            "section_text" => "Pelanggaran",
+            "section_icon" => "fa fa-users",
+            "section_list" => [
+                ["href" => "admin.offense.index", "text" => "Data Jenis Pelanggaran"],
+                ["href" => "admin.offense.create", "text" => "Tambah Jenis Pelanggaran"]
+                ]
+            ],
+            [
+            "section_text" => "Kepatuhan",
+            "section_icon" => "fa fa-users",
+            "section_list" => [
+                ["href" => "admin.addition.index", "text" => "Data Jenis Kepatuhan"],
+                ["href" => "admin.addition.create", "text" => "Tambah Jenis Kepatuhan"]
+                ]
+            ],
+        ],
+        "text" => "Manajemen",
         "is_multi" => true,
-    ],
-];
-$navigation_links = array_to_object($links);
+    ];
+        array_push($links, $add);
+    }
+
+    $navigation_links = array_to_object($links);
 @endphp
 
 <div class="main-sidebar">

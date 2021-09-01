@@ -52,6 +52,101 @@ class Main extends Component
                 ];
                 break;
 
+            case 'member':
+                $members = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.member',
+                    "members" => $members,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('admin.member.create'),
+                            'create_new_text' => 'Buat Member Baru',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+
+            case 'student':
+                $students = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.student',
+                    "students" => $students,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('admin.student.create'),
+                            'create_new_text' => 'Buat Mahasiswa Baru',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+
+            case 'studentDetail':
+                $studentDetails = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.student-detail',
+                    "studentDetails" => $studentDetails,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('admin.student.create'),
+                            'create_new_text' => 'Buat Mahasiswa Baru',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+
+            case 'offense':
+                $offenses = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.offense',
+                    "offenses" => $offenses,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('admin.offense.create'),
+                            'create_new_text' => 'Buat Jenis Pelanggaran',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+
+            case 'addition':
+                $additions = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.addition',
+                    "additions" => $additions,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('admin.addition.create'),
+                            'create_new_text' => 'Buat Jenis Kepatuhan',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+
             default:
                 # code...
                 break;

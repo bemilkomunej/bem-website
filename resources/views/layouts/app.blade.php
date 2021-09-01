@@ -48,7 +48,11 @@
                 cursor: pointer;
             }
         </style>
+        @livewireStyles
         <livewire:styles />
+        @isset($css)
+            {{$css}}
+        @endisset
 
         <!-- Scripts -->
         <script defer src="{{ asset('vendor/alpine.js') }}"></script>
@@ -113,8 +117,13 @@
             });
         </script>
 
-        <script>
 
+        <script>
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            )
 
 
             const SwalModal = (icon, title, html) => {
@@ -179,6 +188,7 @@
             })
         </script>
 
+        @livewireStyles
         @livewireScripts
         {{--@livewireAlertScripts--}}
 
