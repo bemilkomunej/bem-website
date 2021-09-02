@@ -3,7 +3,7 @@
 
 <!-- Start Banner Hero -->
 <div class="banner-wrapper bg-light">
-    <div class="index_banner banner-vertical-center-index container-fluid pt-5">
+    <div class="index-banner banner-vertical-center-index container-fluid pt-5">
 
         <!-- Start slider -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
