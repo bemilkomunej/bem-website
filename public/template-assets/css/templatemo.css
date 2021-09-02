@@ -16,15 +16,6 @@ Table of contents
 7. Pricing
 8. Contact
 --------------------------------------------- */
-@media (max-width: 575.98px) {
-    #index_banner {
-        background-image: url('./../img/bg-banner-fasilkom-mobile.png');
-        background-position: center center; background-size: auto;
-        height: 100%;
-        min-height: 60vh;
-        width: 100%;
-    }
-}
 
 html {font-family: 'Open Sans', sans-serif;}
 /* Typography */
@@ -55,6 +46,26 @@ p, a {font-weight: 400;}
 .typo-space-line-center::after {
   left: 50%;
   margin-left: -75px;
+}
+
+/*tandai*/
+.index_banner {
+    background-image: url('./../img/bg-banner-fasilkom.png');
+    background-position: center center; background-size: cover;
+    height: 100%;
+    min-height: 85vh;
+    width: 100%;
+}
+@media (max-width: 575.98px) {
+    /*tandai*/
+    .index_banner {
+        background-image: url('./../img/bg-banner-fasilkom-mobile.png');
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        min-height: 85vh;
+        width: 100%;
+    }
 }
 /* Main Nav */
 #main_nav .nav-item .nav-link:hover {color: #fff;}

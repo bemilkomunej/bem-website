@@ -6035,13 +6035,13 @@ textarea.form-control-lg {
     overflow-y: auto
 }
 
-.index_banner {
-    background-image: url('./../img/bg-banner-fasilkom.png');
-    background-position: center center; background-size: cover;
-    height: 100%;
-    min-height: 85vh;
-    width: 100%;
-}
+/*.index_banner {*/
+/*    background-image: url('./../img/bg-banner-fasilkom.png');*/
+/*    background-position: center center; background-size: cover;*/
+/*    height: 100%;*/
+/*    min-height: 85vh;*/
+/*    width: 100%;*/
+/*}*/
 
 @media (max-width: 575.98px) {
     /*tandai*/
