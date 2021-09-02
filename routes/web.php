@@ -39,11 +39,11 @@ Route::get('/dashboard', function () {
 //});
 
 Route::get('/', [SiteController::class, 'home'])->name('home');
-Route::get('/about', [SiteController::class, 'about'])->name('about');
+Route::get('/tentang-kami', [SiteController::class, 'about'])->name('tentang-kami');
 Route::get('/blog', [SiteController::class, 'blog'])->name('blog');
 Route::get('/single-blog', [SiteController::class, 'singleBlog'])->name('single-blog');
 Route::get('/point-detail/{nim}', [SiteController::class, 'pointDetail'])->name('point-detail');
-Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
+Route::get('/ppmb', [SiteController::class, 'contact'])->name('ppmb');
 
 Route::get('update-photo',function (){
     return redirect(route('admin.profile.show'));

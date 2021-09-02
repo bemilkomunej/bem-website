@@ -16,6 +16,7 @@
     <link rel="stylesheet" href={{asset("template-assets/css/templatemo.css")}}>
     <!-- Custom CSS -->
     <link rel="stylesheet" href={{asset("template-assets/css/custom.css")}}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--
 
 TemplateMo 561 Purple Buzz
@@ -29,9 +30,9 @@ https://templatemo.com/tm-561-purple-buzz
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
+            <a class="navbar-brand h1" href="{{ route('home') }}">
 {{--                <i class='bx bx-buildings bx-sm text-dark'></i>--}}
-                <a href="index.html" class="logo"><img style="margin-right: 10px; height: 92px; width: 95px" src="template-assets/img/logo/apple-icon.png" alt=""></a>
+                <a href="{{ route('home') }}" class="logo"><img class="my-logo" src="template-assets/img/logo/apple-icon.png" alt=""></a>
                 <span class="text-dark h4">BEM</span> <span class="text-primary h4">FASILKOM</span> <span class="text-dark h4">UNEJ</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,10 +46,13 @@ https://templatemo.com/tm-561-purple-buzz
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('home') }}">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('contact') }}">PPMB</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('ppmb') }}">PPMB</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('about') }}">Tentang Kami</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('tentang-kami') }}">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link banner-button btn rounded-pill btn-outline-primary btn-sm px-md-4" href="{{ route('login') }}" role="button"><i class="fa fa-user"></i>     Login</a>
                         </li>
                         {{--                        <li class="nav-item">--}}
                         {{--                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('blog') }}">Blog</a>--}}
@@ -58,11 +62,11 @@ https://templatemo.com/tm-561-purple-buzz
                         {{--                        </li>--}}
                     </ul>
                 </div>
-                <div class="navbar align-self-center d-flex">
+{{--                <div class="flex-fill mx-xl-5 mb-2">--}}
 {{--                    <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('login') }}">Masuk</a>--}}
-                    <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="{{ route('login') }}" role="button">Masuk</a>
+{{--                    <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="{{ route('login') }}" role="button">Masuk</a>--}}
 {{--                    <a href="{{ route('login') }}" class="btn btn-primary rounded-pill btn-block shadow px-4 py-2">Masuk</a>--}}
-                </div>
+{{--                </div>--}}
             </div>
         </div>
     </nav>
@@ -76,7 +80,7 @@ https://templatemo.com/tm-561-purple-buzz
             <div class="row py-4">
 
                 <div class="col-lg-3 col-12 align-left">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ route('home') }}">
 {{--                        <i class='bx bx-buildings bx-sm text-light'></i>--}}
 {{--                        <img style="margin-right: 10px; height: 92px; width: 95px" src="template-assets/img/logo/apple-icon.png" alt=""></a>--}}
                         <span class="text-light h5">BEM</span> <span class="text-light h5 semi-bold-600">FASILKOM</span> <span class="text-light h5">UNEJ</span>
@@ -110,7 +114,7 @@ https://templatemo.com/tm-561-purple-buzz
                                 <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="{{ route('home') }}">Beranda</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('about') }}">Tentang Kami</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('tentang-kami') }}">Tentang Kami</a>
                             </li>
 {{--                            <li class="pb-2">--}}
 {{--                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('blog') }}">Blog</a>--}}
@@ -119,7 +123,7 @@ https://templatemo.com/tm-561-purple-buzz
 {{--                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>--}}
 {{--                            </li>--}}
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('contact') }}">PPMB</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('ppmb') }}">PPMB</a>
                             </li>
                         </ul>
                 </div>
@@ -152,7 +156,7 @@ https://templatemo.com/tm-561-purple-buzz
                     <h2 class="h4 pb-lg-3 text-light light-300">Hubungi Kami</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">+6282234077219</a>
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://wa.me/6282234077219" target="_blank">+6282234077219</a>
                         </li>
                         <li class="pb-2">
                             <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:bemilkomunej@cs.unej.ac.id">bemilkomunej@cs.unej.ac.id</a>
@@ -168,12 +172,13 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 Purple Buzz Company. All Rights Reserved.
+                            © Copyright 2021 BEM FASILKOM UNEJ. All Rights Reserved.
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
                             Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
+{{--                            Developed by <a rel="sponsored" class="text-decoration-none text-light" href="https://github.com/iosky07" target="_blank"><strong>iosky07</strong></a>--}}
                         </p>
                     </div>
                 </div>

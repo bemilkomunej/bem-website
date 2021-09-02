@@ -104,6 +104,29 @@ class StudentDetailController extends Controller
     public function destroy($id)
     {
 //        dd("aaaa");
+        $student_id = StudentDetail::whereId($id)->pluck("student_id");
+        $student_id = Student::whereId($student_id)->pluck("id");
+        $o_point = StudentDetail::where('id', $id)->pluck('offense_id');
+        $o_point = Offense::whereId($o_point)->pluck('minus_point');
+        $p_point = StudentDetail::where('id', $id)->pluck('addition_id');
+        $p_point = Addition::whereId($p_point)->pluck('plus_point');
+
+        if (isset($o_point[0])) {
+//            dd("ada_value");
+//            dd($student_id[0]);
+            $student_point = Student::whereId($student_id)->pluck("point");
+            $d_offense = $student_point[0] + $o_point[0];
+            Student::whereId($student_id)->update(['point' => $d_offense]);
+        }
+        if (isset($p_point[0])) {
+//            dd("ada_value");
+//            dd($student_id[0]);
+            $student_point = Student::whereId($student_id)->pluck("point");
+            $d_addition = $student_point[0] - $p_point[0];
+            Student::whereId($student_id)->update(['point' => $d_addition]);
+        }
+//        dd("gada value");
+
         StudentDetail::where('id', $id)->delete();
         return back()->with('destroy', 'Data Berhasil Dihapus');
     }
