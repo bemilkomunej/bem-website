@@ -6,16 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {{--    <link rel="apple-touch-icon" href={{asset("template-assets/img/logo/apple-icon.png")}}>--}}
-    <link rel="icon" type="image/x-icon" href={{asset("template-assets/img/logo/apple-icon.png")}}>
+    <link rel="icon" type="image/x-icon" href={{asset("/template-assets/img/logo/apple-icon.png")}}>
     <!-- Load Require CSS -->
-    <link href={{asset("template-assets/css/bootstrap.min.css")}} rel="stylesheet">
+    <link href={{asset("/template-assets/css/bootstrap.min.css")}} rel="stylesheet">
     <!-- Font CSS -->
-    <link href={{asset("template-assets/css/boxicon.min.css")}} rel="stylesheet">
+    <link href={{asset("/template-assets/css/boxicon.min.css")}} rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Load Tempalte CSS -->
-    <link rel="stylesheet" href={{asset("template-assets/css/templatemo.css")}}>
+    <link rel="stylesheet" href={{asset("/template-assets/css/templatemo.css")}}>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href={{asset("template-assets/css/custom.css")}}>
+    <link rel="stylesheet" href={{asset("/template-assets/css/custom.css")}}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--
 
