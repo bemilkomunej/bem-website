@@ -3,6 +3,10 @@
 
 <head>
     <title>BEM FASILKOM UNEJ</title>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {{--    <link rel="apple-touch-icon" href={{asset("template-assets/img/logo/apple-icon.png")}}>--}}
