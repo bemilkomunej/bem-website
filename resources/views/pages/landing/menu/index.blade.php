@@ -28,9 +28,8 @@
 {{--            </a>--}}
         </div>
         <!-- End slider -->
-
-    </div>
 </div>
+
 <!-- End Banner Hero -->
 
 
