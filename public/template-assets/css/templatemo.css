@@ -50,7 +50,7 @@ p, a {font-weight: 400;}
 
 /*tandai*/
 .index-banner {
-    background-image: url('./../img/bg-banner-fasilkom.png');
+    background-image: url('bemilkomunej.com/template-assets/img/bg-banner-fasilkom.png');
     background-position: center center; background-size: cover;
     height: 100%;
     min-height: 85vh;
@@ -59,7 +59,7 @@ p, a {font-weight: 400;}
 @media (max-width: 575.98px) {
     /*tandai*/
     .index-banner {
-        background-image: url('./../img/bg-banner-fasilkom-mobile.png');
+        background-image: url('bemilkomunej.com/template-assets/img/bg-banner-fasilkom-mobile.png');
         background-position: center center;
         background-size: cover;
         height: 100%;
