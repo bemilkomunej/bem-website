@@ -34,7 +34,7 @@ class MemberForm extends Component
         $this->optionDivision=[
             ['value'=>'BPH','title'=>'BPH'],
             ['value'=>'KOMINFO','title'=>'KOMINFO'],
-            ['value'=>'Luar Dalam','title'=>'Luar Dalam'],
+            ['value'=>'LuarDalam','title'=>'Luar Dalam'],
             ['value'=>'ADKESMA','title'=>'ADKESMA'],
             ['value'=>'PSDM','title'=>'PSDM'],
             ['value'=>'Perekonomian','title'=>'Perekonomian'],
