@@ -33,7 +33,7 @@ https://templatemo.com/tm-561-purple-buzz
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand h1" href="{{ route('home') }}">
 {{--                <i class='bx bx-buildings bx-sm text-dark'></i>--}}
-                <span><img class="my-logo" src="template-assets/img/logo/apple-icon.png" alt=""></span>
+                <span><img class="my-logo" src="{{asset('template-assets/img/logo/apple-icon.png')}}" alt=""></span>
                 <span class="text-dark h4">BEM</span> <span class="text-primary h4">FASILKOM</span> <span class="text-dark h4">UNEJ</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
