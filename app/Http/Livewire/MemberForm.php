@@ -71,8 +71,10 @@ class MemberForm extends Component
 
     public function update() {
 
-        $this->thumbnail->storeAs('public/img/member/', $this->member['thumbnail']);
-        Member::find($this->dataId)->update($this->member);
+        if ($this->thumbnail!=NULL) {
+            $this->thumbnail->storeAs('public/img/member/', $this->member['thumbnail']);
+            Member::find($this->dataId)->update($this->member);
+        }
 
         $this->emit('swal:alert', [
             'type'    => 'success',
