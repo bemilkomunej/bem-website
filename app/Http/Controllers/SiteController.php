@@ -32,7 +32,7 @@ class SiteController extends Controller
     }
 
     public function pointDetail($id) {
-        $detail = Student::whereId($id)->first();
+        $detail = Student::findOrFail($id);
         $p_detail = StudentDetail::whereStudentId($id)->get();
 //        dd($p_detail);
 
