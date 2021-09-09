@@ -28,7 +28,9 @@ use Illuminate\Support\Facades\Storage;
 
 */
 
-
+Route::get('/register',function (){
+    return redirect(route('login'));
+});
 
 Route::get('/dashboard', function () {
     return redirect(route('admin.dashboard'));
