@@ -104,7 +104,12 @@ class StudentDetailController extends Controller
     public function destroy($id)
     {
 //        dd("aaaa");
+        $c_id = $id;
         $student_id = StudentDetail::whereId($id)->pluck("student_id");
+        $current_id = StudentDetail::whereStudentId($student_id)->pluck('id');
+        $current_offense_id = StudentDetail::whereStudentId($student_id)->whereOffenseId(NULL)->pluck('id');
+        $current_addition_id = StudentDetail::whereStudentId($student_id)->whereAdditionId(NULL)->pluck('id');
+//        dd($current_offense_id);
         $student_id = Student::whereId($student_id)->pluck("id");
         $o_point = StudentDetail::where('id', $id)->pluck('offense_id');
         $o_point = Offense::whereId($o_point)->pluck('minus_point');
@@ -114,6 +119,16 @@ class StudentDetailController extends Controller
         if (isset($o_point[0])) {
 //            dd("ada_value");
 //            dd($student_id[0]);
+            if (count($current_addition_id)>0) {
+//                dd("asdasd");
+                foreach ($current_id as $item) {
+                    if ($item>$id) {
+                        $d_min = StudentDetail::whereId($item)->pluck("current_point");
+                        $temp = $d_min[0] + $o_point[0];
+                        StudentDetail::whereId($item)->update(['current_point' => $temp]);
+                    }
+                }
+            }
             $student_point = Student::whereId($student_id)->pluck("point");
             $d_offense = $student_point[0] + $o_point[0];
             Student::whereId($student_id)->update(['point' => $d_offense]);
@@ -121,6 +136,16 @@ class StudentDetailController extends Controller
         if (isset($p_point[0])) {
 //            dd("ada_value");
 //            dd($student_id[0]);
+            if (count($current_offense_id)>0) {
+//                dd("addition");
+                foreach ($current_id as $item) {
+                    if ($item>$id) {
+                        $d_plus = StudentDetail::whereId($item)->pluck("current_point");
+                        $temp = $d_plus[0] - $p_point[0];
+                        StudentDetail::whereId($item)->update(['current_point' => $temp]);
+                    }
+                }
+            }
             $student_point = Student::whereId($student_id)->pluck("point");
             $d_addition = $student_point[0] - $p_point[0];
             Student::whereId($student_id)->update(['point' => $d_addition]);
