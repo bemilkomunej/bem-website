@@ -10,7 +10,7 @@
                     Kepatuhan
                     @include('components.sort-icon', ['field' => 'title'])
                 </a></th>
-                <th><a wire:click.prevent="sortBy('minus_point')" role="button" href="#">
+                <th><a wire:click.prevent="sortBy('plus_point')" role="button" href="#">
                     Poin Penambahan
                     @include('components.sort-icon', ['field' => 'plus_point'])
                 </a></th>
