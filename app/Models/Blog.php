@@ -28,4 +28,9 @@ class Blog extends Model
      */
     protected $fillable = ['title', 'slug', 'content', 'view', 'thumbnail', 'created_at', 'updated_at'];
 
+    public static function search($query)
+    {
+        return empty($query) ? static::query()
+            : static::where('title', 'like', '%'.$query.'%');
+    }
 }

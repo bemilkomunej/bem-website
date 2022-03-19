@@ -38,7 +38,7 @@ class MemberForm extends Component
             ['value'=>'ADKESMA','title'=>'ADKESMA'],
             ['value'=>'PSDM','title'=>'PSDM'],
             ['value'=>'Perekonomian','title'=>'Perekonomian'],
-            ['value'=>'NATKAT','title'=>'NATKAT'],
+            ['value'=>'RumahTangga','title'=>'Rumah Tangga'],
         ];
 
 

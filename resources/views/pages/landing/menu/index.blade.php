@@ -16,7 +16,7 @@
 <section class="service-wrapper py-3">
     <div class="container-fluid pb-3">
         <div class="row">
-            <h2 class="h2 text-center col-12 py-5 semi-bold-600">VISI DAN MISI</h2>
+            <h2 class="h2 text-center col-12 py-5 semi-bold-600">VISI DAN MISII</h2>
         </div>
         <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
             <h2 class="h3 pb-4 typo-space-line">VISI</h2>

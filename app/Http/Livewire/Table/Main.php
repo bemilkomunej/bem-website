@@ -52,7 +52,26 @@ class Main extends Component
                 ];
                 break;
 
-            case 'member':
+                case 'blog':
+                    $blogs = $this->model::search($this->search)
+                        ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                        ->paginate($this->perPage);
+    
+                    return [
+                        "view" => 'livewire.table.blog',
+                        "blogs" => $blogs,
+                        "data" => array_to_object([
+                            'href' => [
+                                'create_new' => route('admin.blog.create'),
+                                'create_new_text' => 'Buat Blog Baru',
+                                'export' => '#',
+                                'export_text' => 'Export'
+                            ]
+                        ])
+                    ];
+                    break;
+            
+                case 'member':
                 $members = $this->model::search($this->search)
                     ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
                     ->paginate($this->perPage);

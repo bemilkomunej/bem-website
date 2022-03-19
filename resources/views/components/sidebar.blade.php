@@ -28,6 +28,14 @@ if (Auth::user()->role==1) {
                         ]
                 ],
                 [
+                    "section_text" => "Blog",
+                    "section_icon" => "fa fa-users",
+                    "section_list" => [
+                        ["href" => "admin.blog.index", "text" => "Data Blog"],
+                        ["href" => "admin.blog.create", "text" => "Tambah Blog"]
+                        ]
+                ],
+                [
                     "section_text" => "Mahasiswa Baru",
                     "section_icon" => "fa fa-users",
                     "section_list" => [

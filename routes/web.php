@@ -28,9 +28,9 @@ use Illuminate\Support\Facades\Storage;
 
 */
 
-Route::get('/register',function (){
-    return redirect(route('login'));
-});
+// Route::get('/register',function (){
+//     return redirect(route('login'));
+// });
 
 Route::get('/dashboard', function () {
     return redirect(route('admin.dashboard'));
@@ -55,7 +55,7 @@ Route::get('update-photo',function (){
 Route::name('admin.')->prefix('admin')->middleware(['auth:sanctum','web', 'verified'])->group(function() {
     Route::post('/summernote-upload',[SupportController::class,'upload'])->name('summernote_upload');
     Route::view('/dashboard', "dashboard")->name('dashboard');
-//    Route::resource('blog', BlogController::class);
+   Route::resource('blog', BlogController::class);
     Route::middleware(['checkRole:1,2'])->group(function () {
         Route::resource('member', MemberController::class);
     });
