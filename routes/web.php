@@ -43,7 +43,8 @@ Route::get('/dashboard', function () {
 Route::get('/', [SiteController::class, 'home'])->name('home');
 Route::get('/tentang-kami', [SiteController::class, 'about'])->name('tentang-kami');
 Route::get('/blog', [SiteController::class, 'blog'])->name('blog');
-Route::get('/single-blog', [SiteController::class, 'singleBlog'])->name('single-blog');
+Route::get('/blog/{blog:slug}', [SiteController::class, 'article']);
+// Route::get('/single-blog', [SiteController::class, 'singleBlog'])->name('single-blog');
 Route::get('/point-detail/{nim}', [SiteController::class, 'pointDetail'])->name('point-detail');
 Route::get('/ppmb', [SiteController::class, 'contact'])->name('ppmb');
 

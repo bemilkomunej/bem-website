@@ -1,13 +1,13 @@
 <div class="form-group col-span-6 sm:col-span-5" wire:ignore>
     <label for="name">{{$title}}</label>
-    <textarea type="text" input="description" id="{{str_replace(".", "", $model)}}" class="form-control summernote"></textarea>
+    <textarea type="text" input="description" id="{{str_replace('.', '', $model)}}" class="form-control summernote"></textarea>
     @error($model) <span class="error">{{ $message }}</span> @enderror
     <script>
         document.addEventListener('livewire:load', function () {
             $("textarea#{{str_replace('.', '', $model)}}").val(@this.get('{{$model}}'));
             $('#{{str_replace(".", "", $model)}}').summernote({
                 dialogsInBody: true,
-                tabsize: 2,
+                // tabsize: 2,
                 height: 200,
 
                 callbacks: {
@@ -18,14 +18,15 @@
                         console.log('file loading');
                     },
                     onChange: function (content, $editable) {
-                    @this.set('{{$model}}', content)
+                        @this.set('{{$model}}', content);
                     },
-
                 }
             });
             $.upload = function (file) {
                 let out = new FormData();
                 out.append('file', file, file.name);
+                console.log(`name file: ${file.name}`);
+                console.log(`csrf-token: ${$('meta[name=csrf-token]').attr('content')}`);
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name=csrf-token]').attr('content')
@@ -42,10 +43,13 @@
                         // var image = $('<img>').attr('src', 'http://' + img);
                         {{--$('#{{str_replace(".", "", $model)}}').summernote('insertImage', img);--}}
                             image='<img src="'+window.location.protocol+'//'+window.location.host+'/storage/'+img+ '" alt=\"Italian Trulli\">'
-                        $("textarea#{{str_replace('.', '', $model)}}").summernote('code',@this.get('{{$model}}')+image);
-console.log(img)
+                        $("textarea#{{str_replace('.', '', $model)}}").
+                        summernote('code',@this.get('{{$model}}')+image);
+                        // summernote('insertImage', img);
+                        console.log(img);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
+                        console.log('njir');
                         console.error(textStatus + " " + errorThrown);
                     }
                 });

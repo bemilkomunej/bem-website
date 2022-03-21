@@ -5,22 +5,57 @@
     <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
         <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
             <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
-                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Our Work</h1>
-                <h3 class="h4 pb-2 regular-400">Elit, sed do eiusmod tempor incididunt</h3>
-                <p class="banner-body pb-2 light-300">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Blog Post</h1>
+                <h3 class="h4 pb-2 regular-400">Semua Postingan</h3>
+                <!-- <p class="banner-body pb-2 light-300">
                     Vector illustration <a class="text-white" href="http://freepik.com/" target="_blank">Freepik</a>.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                     commodo viverra maecenas accumsan lacus.
-                </p>
-                <button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Learn More</button>
-                <button type="submit" class="btn rounded-pill btn-secondary text-light px-4 light-300">Contact Us</button>
+                </p> -->
+                <!-- <button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Learn More</button>
+                <button type="submit" class="btn rounded-pill btn-secondary text-light px-4 light-300">Contact Us</button> -->
             </div>
         </div>
     </div>
     <!-- End Banner Hero -->
 
+    <section class="container py-3">
+    <div class="row">
+        <div class="col-lg-7 m-100">
+            <img src="https://source.unsplash.com/1600x900/?program" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-5">
+            <h5>17 Maret 2022</h5>
+            <a href="/blog/{{ $data[0]->slug }}"><h1>{{ $data[0]->title }}</h1></a>
+            <p class="text-truncate">{!! $data[0]->contents !!}</p>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5">
+        <div class="row projects gx-lg-5">
+            @foreach ($data->skip(1) as $post)
+            <a href="/blog/{{ $post->slug }}" class="col-sm-6 col-lg-4 text-decoration-none my-3">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="https://source.unsplash.com/500x500/?program" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark text-truncate">{{ $post->title }}</h5>
+                        <p class="card-text light-300 text-dark text-truncate">
+                            {!! $post->contents !!}
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            @endforeach
+        </div>
+        </section>
+
+        {{ $data->links() }}
     <!-- Start Our Work -->
 {{--    <section class="container py-5">--}}
 {{--        <div class="row justify-content-center my-5">--}}
@@ -145,7 +180,7 @@
     <!-- End Our Work -->
 
     <!-- Start Feature Work -->
-    <section class="bg-light py-5">
+    <!-- <section class="bg-light py-5">
         <div class="feature-work container my-4">
             <div class="row d-flex d-flex align-items-center">
                 <div class="col-lg-5">
@@ -179,7 +214,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Feature Work -->
 
 @endsection

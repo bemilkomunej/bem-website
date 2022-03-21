@@ -23,15 +23,10 @@
 
         <div class="row pt-5">
             <div class="worksingle-content col-lg-8 m-auto text-left justify-content-center">
-                <h2 class="worksingle-heading h3 pb-3 light-300 typo-space-line">Digital Marketing Service</h2>
-                <p class="worksingle-footer py-3 text-muted light-300">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <h2 class="worksingle-heading h3 pb-3 light-300 typo-space-line">{{ $data->title }}</h2>
+                <!-- <p class="worksingle-footer py-3 text-muted light-300"> -->
+                    {!! $data->contents !!}
+                <!-- </p> -->
             </div>
         </div><!-- End Blog Cover -->
 

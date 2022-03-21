@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Member;
+use App\Models\Blog;
 use App\Models\Student;
 use App\Models\StudentDetail;
 use Illuminate\Http\Request;
@@ -20,12 +21,16 @@ class SiteController extends Controller
     }
 
     public function blog() {
-        return view('pages.landing.menu.blog');
+        return view('pages.landing.menu.blog', ["data" => Blog::where('status', 'Published')->latest()->paginate(7)]);
+    }
+    
+    public function article(Blog $blog){
+        return view('pages.landing.menu.single-blog', ["data" => $blog]);
     }
 
-    public function singleBlog() {
-        return view('pages.landing.menu.single-blog');
-    }
+    // public function singleBlog() {
+    //     return view('pages.landing.menu.single-blog');
+    // }
 
     public function contact() {
         return view('pages.landing.menu.contact');

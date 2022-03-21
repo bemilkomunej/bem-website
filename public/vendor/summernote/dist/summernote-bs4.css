@@ -134,6 +134,10 @@
   content: "\f119"
 }
 
+.note-icon-float-center:before {
+  content: "\2680"
+  }
+
 .note-icon-float-none:before {
   content: "\f11a"
 }
@@ -305,6 +309,11 @@
 
 .note-editor .note-editing-area img.note-float-left {
   margin-right: 10px
+}
+
+.note-editor .note-editing-area img.note-float-center{
+  display: block; 
+  margin: 0 auto;
 }
 
 .note-editor .note-editing-area img.note-float-right {

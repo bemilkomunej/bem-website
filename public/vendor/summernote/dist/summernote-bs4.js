@@ -303,6 +303,7 @@
               resizeQuarter: 'Resize quarter',
               resizeNone: 'Original size',
               floatLeft: 'Float Left',
+              floatCenter: 'Float Center',
               floatRight: 'Float Right',
               floatNone: 'Remove float',
               shapeRounded: 'Shape: Rounded',
@@ -4325,6 +4326,7 @@
           this.floatMe = this.wrapCommand(function (value) {
               var $target = $$1(_this.restoreTarget());
               $target.toggleClass('note-float-left', value === 'left');
+              $target.toggleClass('note-float-center', value === 'center');
               $target.toggleClass('note-float-right', value === 'right');
               $target.css('float', (value === 'none' ? '' : value));
           });
@@ -6151,6 +6153,7 @@
                   click: _this.context.createInvokeHandler('editor.floatMe', 'left')
               }).render();
           });
+          this.context.memo('button.floatCenter', function () { return _this.button({ contents: _this.ui.icon(_this.options.icons.floatCenter), tooltip: _this.lang.image.floatCenter, click: _this.context.createInvokeHandler('editor.floatMe', 'center') }).render(); });
           this.context.memo('button.floatRight', function () {
               return _this.button({
                   contents: _this.ui.icon(_this.options.icons.floatRight),
@@ -7526,7 +7529,7 @@
           popover: {
               image: [
                   ['resize', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
-                  ['float', ['floatLeft', 'floatRight', 'floatNone']],
+                  ['float', ['floatLeft', 'floatCenter', 'floatRight', 'floatNone']],
                   ['remove', ['removeMedia']],
               ],
               link: [
@@ -7725,6 +7728,7 @@
               'code': 'note-icon-code',
               'eraser': 'note-icon-eraser',
               'floatLeft': 'note-icon-float-left',
+              'floatCenter': 'note-icon-float-center',
               'floatRight': 'note-icon-float-right',
               'font': 'note-icon-font',
               'frame': 'note-icon-frame',

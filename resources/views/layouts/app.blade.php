@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
         <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
         <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
         <style type="text/css">
             button[data-name=resizedDataImage]  {
                 position: relative;
@@ -94,11 +94,12 @@
         <script defer src="{{ asset('stisla/js/modules/moment.min.js') }}"></script>
         <script defer src="{{ asset('stisla/js/modules/marked.min.js') }}"></script>
         <script defer src="{{ asset('vendor/notyf/notyf.min.js') }}"></script>
-        <script defer src="{{ asset('vendor/sweetalert/sweetalert.min.js') }}"></script>
+        <!-- <script defer src="{{ asset('vendor/sweetalert/sweetalert.min.js') }}"></script> -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script defer src="{{ asset('stisla/js/modules/chart.min.js') }}"></script>
-        <script type="text/javascript" src="{{asset('js/exif.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
         <script defer src="{{asset('vendor/summernote/dist/summernote-bs4.js')}}"></script>
-        <script defer src="{{asset('vendor/summernote/plugin/summernote-ext-resized-data-image.js')}}"></script>
+        <!-- <script defer src="{{asset('vendor/summernote/plugin/summernote-ext-resized-data-image.js')}}"></script> -->
         <script defer src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
         <script defer src="{{asset('vendor/chart.js/dist/Chart.min.js')}}"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
@@ -110,22 +111,15 @@
         {{--<livewire:scripts/>--}}
 
         <script>
-            $('.daterange-cus').daterangepicker({
-                locale: {format: 'YYYY-MM-DD'},
-                drops: 'down',
-                opens: 'right'
-            });
+            // $('.daterange-cus').daterangepicker({
+            //     locale: {format: 'YYYY-MM-DD'},
+            //     drops: 'down',
+            //     opens: 'right'
+            // });
         </script>
 
 
         <script>
-            Swal.fire(
-                'Good job!',
-                'You clicked the button!',
-                'success'
-            )
-
-
             const SwalModal = (icon, title, html) => {
                 Swal.fire({
                     icon,
@@ -158,10 +152,11 @@
             const SwalAlert = (icon, title, timeout = 2000) => {
                 const Toast = Swal.mixin({
                     toast: true,
-                    position: 'top-end',
+                    position: 'bottom-end',
                     showConfirmButton: false,
+                    timerProgressBar: true,
                     timer: timeout,
-                    onOpen: toast => {
+                    didOpen: toast => {
                         toast.addEventListener('mouseenter', Swal.stopTimer)
                         toast.addEventListener('mouseleave', Swal.resumeTimer)
                     }
@@ -176,15 +171,15 @@
             document.addEventListener('DOMContentLoaded', () => {
                 this.livewire.on('swal:modal', data => {
                     SwalModal(data.icon, data.title, data.text)
-                })
+                });
 
                 this.livewire.on('swal:confirm', data => {
                     SwalConfirm(data.icon, data.title, data.text, data.confirmText, data.method, data.params, data.callback)
-                })
+                });
 
                 this.livewire.on('swal:alert', data => {
                     SwalAlert(data.icon, data.title, data.timeout)
-                })
+                });
             })
         </script>
 

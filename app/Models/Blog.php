@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * @property integer $id
@@ -16,6 +17,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Blog extends Model
 {
+    use HasFactory;
+
     /**
      * The "type" of the auto-incrementing ID.
      * 
@@ -26,11 +29,25 @@ class Blog extends Model
     /**
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'content', 'view', 'thumbnail', 'created_at', 'updated_at'];
+    protected $fillable = ['title', 'slug', 'contents', 'status', 'created_at', 'updated_at'];
 
     public static function search($query)
     {
         return empty($query) ? static::query()
             : static::where('title', 'like', '%'.$query.'%');
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }
