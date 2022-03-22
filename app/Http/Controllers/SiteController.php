@@ -11,7 +11,8 @@ use Illuminate\Http\Request;
 class SiteController extends Controller
 {
     public function home() {
-        return view('pages.landing.menu.index');
+        // return view('pages.landing.menu.index');
+        return view('pages.landing2.menu.index', ["blogs" => Blog::latest()->limit(3)->get()]);
     }
 
     public function about() {
@@ -21,11 +22,16 @@ class SiteController extends Controller
     }
 
     public function blog() {
-        return view('pages.landing.menu.blog', ["data" => Blog::where('status', 'Published')->latest()->paginate(7)]);
+        // return view('pages.landing.menu.blog', ["data" => Blog::where('status', 'Published')->latest()->paginate(7)]);
+        return view('pages.landing2.menu.blog', ["blogs" => Blog::where('status', 'Published')->latest()->paginate(8)]);
     }
     
     public function article(Blog $blog){
-        return view('pages.landing.menu.single-blog', ["data" => $blog]);
+        // return view('pages.landing.menu.single-blog', ["data" => $blog]);
+        return view('pages.landing2.menu.single-blog', [
+            "blog" => $blog,
+            "blogs" => Blog::where('status', 'Published')->latest()->limit(5)->get()
+        ]);
     }
 
     // public function singleBlog() {
