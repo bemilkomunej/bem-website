@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Member;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -48,6 +49,8 @@ class MemberForm extends Component
                 'name'=>$m->name,
                 'division'=>$m->division,
                 'position'=>$m->position,
+                'instagram'=>$m->instagram,
+                'linkedin'=>$m->linkedin,
                 'thumbnail'=>$m->thumbnail
             ];
         }

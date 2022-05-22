@@ -20,8 +20,8 @@ class StudentController extends Controller
         return view('pages.student.create');
     }
 
-    public function edit($id)
+    public function edit(Student $student)
     {
-        return view('pages.student.edit', compact('id'));
+        return view('pages.student.edit', compact('student'));
     }
 }

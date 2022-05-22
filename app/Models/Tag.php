@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Tag extends Model
 {
+    use HasFactory;
     /**
      * The "type" of the auto-incrementing ID.
      * 
@@ -31,5 +33,9 @@ class Tag extends Model
     public function blogTags()
     {
         return $this->hasMany('App\Models\BlogTag');
+    }
+    public function blogs()
+    {
+        return $this->hasMany('App\Models\Blog');
     }
 }

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        <link href={{asset("/template-assets/img/logo/apple-icon.png")}} rel="icon">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         @isset($meta)
@@ -14,6 +14,7 @@
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('vendor/bootstrap.min.css') }}">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.css" rel="stylesheet"> -->
         <link rel="stylesheet" href="{{ asset('vendor/summernote/dist/summernote-bs4.css')}}">
         <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}">
         <link rel="stylesheet" href="{{ asset('stisla/css/style.css') }}">
@@ -98,6 +99,7 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script defer src="{{ asset('stisla/js/modules/chart.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.js"></script> -->
         <script defer src="{{asset('vendor/summernote/dist/summernote-bs4.js')}}"></script>
         <!-- <script defer src="{{asset('vendor/summernote/plugin/summernote-ext-resized-data-image.js')}}"></script> -->
         <script defer src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>

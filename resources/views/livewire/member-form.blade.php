@@ -6,6 +6,8 @@
         <x-select :options="$optionDivision" :selected="$member['division']" title="Divisi" model="member.division"/>
 
         <x-input type="text" title="Posisi" model="member.position"/>
+        <x-input type="text" title="Instagram" model="member.instagram"/>
+        <x-input type="text" title="Linkedin" model="member.linkedin"/>
 
         <x-input type="file" title="Foto" model="thumbnail"/>
         <div wire:loading wire:target="thumbnail">

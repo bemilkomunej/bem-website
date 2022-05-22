@@ -5,6 +5,18 @@
 
 <!-- ======= Breadcrumbs ======= -->
 <section class="breadcrumbs">
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
   <div class="container">
 
     <ol>
@@ -23,133 +35,46 @@
     <div class="row">
 
       <div class="col-lg-8 entries">
-
+        @foreach($blogs as $blog)
         <article class="entry">
 
           <div class="entry-img">
-            <img src={{ asset("landing2/assets/img/blog/blog-1.jpg") }} alt="" class="img-fluid">
+            <img src={{ $blog->thumbnail != NULL ? asset("storage/img/blog/".$blog->thumbnail) : asset("landing2/assets/img/blog/blog-1.jpg") }} alt="{{ $blog->title }}" class="img-fluid">
           </div>
 
           <h2 class="entry-title">
-            <a href="/blog/{{ $blogs[0]->slug }}">{{ $blogs[0]->title }}</a>
+            <a href="/blog/{{ $blog->slug }}">{{ $blog->title }}</a>
           </h2>
 
           <div class="entry-meta">
             <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/blog/{{ $blogs[0]->slug }}">Administrator</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/blog/{{ $blogs[0]->slug }}"><time datetime="{{ $blogs[0]->created_at->format('yyyy-mm-dd') }}">{{ $blogs[0]->created_at->format('M d, Y') }}</time></a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="/blog/{{ $blogs[0]->slug }}">12 Comments</a></li>
+              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/blog?author={{ $blog->user->name }}">{{ $blog->user->name }}</a></li>
+              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/blog/{{ $blog->slug }}"><time datetime="{{ $blog->created_at->format('Y-m-d') }}">{{ $blog->created_at->format('M d, Y') }}</time></a></li>
+              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="/blog/{{ $blog->slug }}#disqus_thread">0 Comment</a></li>
             </ul>
           </div>
 
           <div class="entry-content">
             <p>
-              Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-              Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+              {{ Str::limit(strip_tags($blog->contents),200) }}
+              <!-- Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+              Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore. -->
             </p>
             <div class="read-more">
-              <a href="/blog/{{ $blogs[0]->slug }}">Read More</a>
+              <a href="/blog/{{ $blog->slug }}">Read More</a>
             </div>
           </div>
 
         </article><!-- End blog entry -->
-
-        <article class="entry">
-
-          <div class="entry-img">
-            <img src={{ asset("landing2/assets/img/blog/blog-2.jpg") }} alt="" class="img-fluid">
-          </div>
-
-          <h2 class="entry-title">
-            <a href="/blog/{{ $blogs[1]->slug }}">Nisi magni odit consequatur autem nulla dolorem</a>
-          </h2>
-
-          <div class="entry-meta">
-            <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/blog/{{ $blogs[1]->slug }}">Administrator</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/blog/{{ $blogs[1]->slug }}"><time datetime="{{ $blogs[1]->created_at->format('yyyy-mm-dd') }}">{{ $blogs[1]->created_at->format('M d, Y') }}</time></a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="/blog/{{ $blogs[1]->slug }}">12 Comments</a></li>
-            </ul>
-          </div>
-
-          <div class="entry-content">
-            <p>
-              Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
-              Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
-            </p>
-            <div class="read-more">
-              <a href="/blog/{{ $blogs[1]->slug }}">Read More</a>
-            </div>
-          </div>
-
-        </article><!-- End blog entry -->
-
-        <article class="entry">
-
-          <div class="entry-img">
-            <img src={{ asset("landing2/assets/img/blog/blog-3.jpg") }} alt="" class="img-fluid">
-          </div>
-
-          <h2 class="entry-title">
-            <a href="/blog/{{ $blogs[2]->slug }}">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
-          </h2>
-
-          <div class="entry-meta">
-            <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/blog/{{ $blogs[2]->slug }}">Administrator</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/blog/{{ $blogs[2]->slug }}"><time datetime="{{ $blogs[2]->created_at->format('yyyy-mm-dd') }}">{{ $blogs[2]->created_at->format('M d, Y') }}</time></a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="/blog/{{ $blogs[2]->slug }}">12 Comments</a></li>
-            </ul>
-          </div>
-
-          <div class="entry-content">
-            <p>
-              Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
-              Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
-            </p>
-            <div class="read-more">
-              <a href="/blog/{{ $blogs[2]->slug }}">Read More</a>
-            </div>
-          </div>
-
-        </article><!-- End blog entry -->
-
-        <!-- <article class="entry">
-
-          <div class="entry-img">
-            <img src={{ asset("landing2/assets/img/blog/blog-4.jpg") }} alt="" class="img-fluid">
-          </div>
-
-          <h2 class="entry-title">
-            <a href="blog-single.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
-          </h2>
-
-          <div class="entry-meta">
-            <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">Administrator</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
-            </ul>
-          </div>
-
-          <div class="entry-content">
-            <p>
-              Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
-              Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
-            </p>
-            <div class="read-more">
-              <a href="blog-single.html">Read More</a>
-            </div>
-          </div>
-
-        </article>End blog entry -->
+        @endforeach
 
         <div class="blog-pagination">
-          <ul class="justify-content-center">
+          {{ $blogs->links() }}
+          <!-- <ul class="justify-content-center">
             <li><a href="#">1</a></li>
             <li class="active"><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-          </ul>
+          </ul> -->
         </div>
 
       </div><!-- End blog entries list -->
@@ -160,8 +85,11 @@
 
           <h3 class="sidebar-title">Search</h3>
           <div class="sidebar-item search-form">
-            <form action="">
-              <input type="text">
+            <form action="/blog">
+              @if(request('category'))
+                <input type="hidden" name="category" value="{{ request('category') }}">
+              @endif
+              <input type="text" name="search" value="{{ request('search') }}">
               <button type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div><!-- End sidebar search formn-->
@@ -169,20 +97,19 @@
           <h3 class="sidebar-title">Categories</h3>
           <div class="sidebar-item categories">
             <ul>
-              <li><a href="#">General <span>(25)</span></a></li>
-              <li><a href="#">Lifestyle <span>(12)</span></a></li>
-              <li><a href="#">Travel <span>(5)</span></a></li>
-              <li><a href="#">Design <span>(22)</span></a></li>
-              <li><a href="#">Creative <span>(8)</span></a></li>
-              <li><a href="#">Educaion <span>(14)</span></a></li>
+              @foreach($categories as $category)
+              <li><a href="/blog?category={{$category->title}}">{{$category->title}} <span>({{ $category->blogs->where('status','Published')->count() }})</span></a></li>
+              @endforeach
             </ul>
           </div><!-- End sidebar categories-->
 
           <h3 class="sidebar-title">Recent Posts</h3>
           <div class="sidebar-item recent-posts">
-              @foreach( $blogs->skip(3) as $blog)
+              @foreach( $recents as $blog)
             <div class="post-item clearfix">
-              <img src={{ asset("landing2/assets/img/blog/blog-recent-1.jpg") }} alt="">
+              <div class="item__img">
+                <img src={{ $blog->thumbnail != NULL ? asset("storage/img/blog/".$blog->thumbnail) : asset("landing2/assets/img/blog/blog-1.jpg") }} alt="{{ $blog->title }}">
+              </div>
               <h4><a href="/blog/{{ $blog->slug }}">{{ $blog->title }}</a></h4>
               <time datetime="{{ $blog->created_at->format('yyyy-mm-dd') }}">{{ $blog->created_at->format('M d, Y') }}</time>
             </div>
@@ -214,7 +141,7 @@
 
           </div><!-- End sidebar recent posts-->
 
-          <h3 class="sidebar-title">Tags</h3>
+          <!-- <h3 class="sidebar-title">Tags</h3>
           <div class="sidebar-item tags">
             <ul>
               <li><a href="#">App</a></li>
@@ -229,7 +156,8 @@
               <li><a href="#">Tips</a></li>
               <li><a href="#">Marketing</a></li>
             </ul>
-          </div><!-- End sidebar tags-->
+          </div> -->
+          <!-- End sidebar tags-->
 
         </div><!-- End sidebar -->
 
@@ -242,4 +170,7 @@
 
 </main><!-- End #main -->
 
+@endsection
+@section('customscript')
+<script id="dsq-count-scr" src="//bemilkomunej.disqus.com/count.js" async></script>
 @endsection

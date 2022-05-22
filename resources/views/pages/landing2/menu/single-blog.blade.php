@@ -5,14 +5,26 @@
 
 <!-- ======= Breadcrumbs ======= -->
 <section class="breadcrumbs">
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
   <div class="container">
 
     <ol>
       <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li>Blog Single</li>
+      <li><a href="/blog">Blog</a></li>
+      <li>{{ $blog->title }}</li>
     </ol>
-    <h2>Blog Single</h2>
+    <h2>{{ $blog->title }}</h2>
 
   </div>
 </section><!-- End Breadcrumbs -->
@@ -28,18 +40,18 @@
         <article class="entry entry-single">
 
           <div class="entry-img">
-            <img src={{ asset("landing2/assets/img/blog/blog-1.jpg") }} alt="" class="img-fluid">
+            <img src={{ $blog->thumbnail != NULL ? asset("storage/img/blog/".$blog->thumbnail) : asset("landing2/assets/img/blog/blog-1.jpg") }} alt="{{ $blog->title }}" class="img-fluid">
           </div>
 
           <h2 class="entry-title">
-            <a href="#">{{ $blog->title}}</a>
+            <a href="#">{{ $blog->title }}</a>
           </h2>
 
           <div class="entry-meta">
             <ul>
-              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Administrator</a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ $blog->created_at->format('yyyy-mm-dd') }}"><time datetime="2020-01-01">{{ $blog->created_at->format('M d, Y') }}</time></a></li>
-              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12 Comments</a></li>
+              <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/blog?author={{ $blog->user->name }}">{{ $blog->user->name }}</a></li>
+              <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/blog/{{ $blog->created_at->format('Y-m-d') }}"><time datetime="{{ $blog->created_at->format('Y-m-d') }}">{{ $blog->created_at->format('M d, Y') }}</time></a></li>
+              <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="/blog/{{ $blog->slug }}#disqus_thread">0 Comment</a></li>
             </ul>
           </div>
 
@@ -88,30 +100,32 @@
           <div class="entry-footer">
             <i class="bi bi-folder"></i>
             <ul class="cats">
-              <li><a href="#">Business</a></li>
+              <li><a href="/blog?category={{ $blog->tag->title }}">{{ $blog->tag->title }}</a></li>
             </ul>
 
-            <i class="bi bi-tags"></i>
+            <!-- <i class="bi bi-tags"></i>
             <ul class="tags">
               <li><a href="#">Creative</a></li>
               <li><a href="#">Tips</a></li>
               <li><a href="#">Marketing</a></li>
-            </ul>
+            </ul> -->
           </div>
 
         </article><!-- End blog entry -->
 
         <div class="blog-author d-flex align-items-center">
-          <img src={{ asset("landing2/assets/img/blog/blog-author.jpg") }} class="rounded-circle float-left" alt="">
+          <img src={{ empty($blog->user->profile_photo_path) ? asset("template-assets/img/logo/apple-icon.png") : asset("storage/" . $blog->user->profile_photo_path) }} class="rounded-circle float-left" alt="">
           <div>
-            <h4>Jane Smith</h4>
+            <h4>{{ $blog->user->name }}</h4>
             <div class="social-links">
-              <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
-              <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
-              <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+              <a href="https://linkedin.com/company/bemilkom"><i class="bi bi-linkedin"></i></a>
+              <a href="https://facebook.com/bemilkomunej"><i class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com/bemilkomunej"><i class="biu bi-instagram"></i></a>
             </div>
             <p>
-              Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+              <!-- Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+             -->
+             {{ $blog->user->quotes }}
             </p>
           </div>
         </div><!-- End blog author bio -->
@@ -127,8 +141,8 @@
 
           <h3 class="sidebar-title">Search</h3>
           <div class="sidebar-item search-form">
-            <form action="">
-              <input type="text">
+            <form action="/blog">
+              <input type="text" name="search">
               <button type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div><!-- End sidebar search formn-->
@@ -136,12 +150,9 @@
           <h3 class="sidebar-title">Categories</h3>
           <div class="sidebar-item categories">
             <ul>
-              <li><a href="#">General <span>(25)</span></a></li>
-              <li><a href="#">Lifestyle <span>(12)</span></a></li>
-              <li><a href="#">Travel <span>(5)</span></a></li>
-              <li><a href="#">Design <span>(22)</span></a></li>
-              <li><a href="#">Creative <span>(8)</span></a></li>
-              <li><a href="#">Educaion <span>(14)</span></a></li>
+            @foreach($categories as $category)
+              <li><a href="/blog?category={{$category->title}}">{{$category->title}} <span>({{ $category->blogs->where('status','Published')->count() }})</span></a></li>
+              @endforeach
             </ul>
           </div><!-- End sidebar categories-->
 
@@ -149,7 +160,9 @@
           <div class="sidebar-item recent-posts">
               @foreach( $blogs as $b )
             <div class="post-item clearfix">
-              <img src={{ asset("landing2/assets/img/blog/blog-recent-1.jpg") }} alt="">
+            <div class="item__img">
+              <img src={{ $b->thumbnail != NULL ? asset("storage/img/blog/".$b->thumbnail) : asset("landing2/assets/img/blog/blog-1.jpg") }} alt="{{ $b->title }}" class="img-fluid">
+            </div>
               <h4><a href="/blog/{{ $b->slug }}">{{ $b->title }}</a></h4>
               <time datetime="{{ $b->created_at->format('yyyy-mm-dd') }}">{{ $b->created_at->format('M d, Y') }}</time>
             </div>
@@ -181,7 +194,7 @@
 
           </div><!-- End sidebar recent posts-->
 
-          <h3 class="sidebar-title">Tags</h3>
+          <!-- <h3 class="sidebar-title">Tags</h3>
           <div class="sidebar-item tags">
             <ul>
               <li><a href="#">App</a></li>
@@ -196,7 +209,8 @@
               <li><a href="#">Tips</a></li>
               <li><a href="#">Marketing</a></li>
             </ul>
-          </div><!-- End sidebar tags-->
+          </div> -->
+          <!-- End sidebar tags-->
 
         </div><!-- End sidebar -->
 
@@ -211,7 +225,6 @@
 
 @endsection
 @section('customscript')
-
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -229,5 +242,6 @@
     (d.head || d.body).appendChild(s);
     })();
 </script>
+<script id="dsq-count-scr" src="//bemilkomunej.disqus.com/count.js" async></script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 @endsection

@@ -41,12 +41,29 @@ Route::get('/dashboard', function () {
 //});
 
 Route::get('/', [SiteController::class, 'home'])->name('home');
-Route::get('/tentang-kami', [SiteController::class, 'about'])->name('tentang-kami');
+
 Route::get('/blog', [SiteController::class, 'blog'])->name('blog');
 Route::get('/blog/{blog:slug}', [SiteController::class, 'article']);
 // Route::get('/single-blog', [SiteController::class, 'singleBlog'])->name('single-blog');
-Route::get('/point-detail/{nim}', [SiteController::class, 'pointDetail'])->name('point-detail');
-Route::get('/ppmb', [SiteController::class, 'contact'])->name('ppmb');
+Route::get('/ppmb/{student:nim}', [SiteController::class, 'pointDetail'])->name('point-detail');
+Route::get('/ppmb', [SiteController::class, 'ppmb'])->name('ppmb');
+
+
+
+// Tentang-Kami
+Route::get('/kabinet', [SiteController::class, 'kabinet'])->name('kabinet');
+Route::get('/profil', [SiteController::class, 'profil'])->name('profil');
+Route::get('/kominfo', [SiteController::class, 'kominfo'])->name('kominfo');
+Route::get('/adkesma', [SiteController::class, 'adkesma'])->name('adkesma');
+Route::get('/luardalam', [SiteController::class, 'luardalam'])->name('luardalam');
+Route::get('/psdm', [SiteController::class, 'psdm'])->name('psdm');
+Route::get('/perekonomian', [SiteController::class, 'perekonomian'])->name('perekonomian');
+Route::get('/rumahtangga', [SiteController::class, 'rumahtangga'])->name('rumahtangga');
+
+
+
+
+
 
 Route::get('update-photo',function (){
     return redirect(route('admin.profile.show'));
@@ -56,8 +73,8 @@ Route::get('update-photo',function (){
 Route::name('admin.')->prefix('admin')->middleware(['auth:sanctum','web', 'verified'])->group(function() {
     Route::post('/summernote-upload',[SupportController::class,'upload'])->name('summernote_upload');
     Route::view('/dashboard', "dashboard")->name('dashboard');
-   Route::resource('blog', BlogController::class);
     Route::middleware(['checkRole:1,2'])->group(function () {
+        Route::resource('blog', BlogController::class);
         Route::resource('member', MemberController::class);
     });
     Route::resource('student', StudentController::class);
@@ -94,4 +111,8 @@ Route::name('admin.')->prefix('admin')->middleware(['auth:sanctum','web', 'verif
         });
     });
 
+});
+
+Route::get('/{shortlink}',function ($shortlink){
+    return redirect('https://unej.id/'.$shortlink);
 });

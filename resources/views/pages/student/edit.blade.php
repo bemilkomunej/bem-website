@@ -10,6 +10,6 @@
     </x-slot>
 
     <div>
-        <livewire:student-form action="update" dataId="{{$id}}"/>
+        <livewire:student-form action="update" dataId="{{$student->id}}"/>
     </div>
 </x-app-layout>

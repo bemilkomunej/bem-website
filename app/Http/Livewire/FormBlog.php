@@ -2,31 +2,39 @@
 
 namespace App\Http\Livewire;
 
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Tag;
 use App\Models\Blog;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class FormBlog extends Component
 {
-
+    use WithFileUploads;
     public $dataId;
     public $action;
     public $blog;
-    public $blogCategory;
+    public $thumbnail;
+    // public $blogCategory;
     public $optionCategory;
     public $optionStatus;
 
     protected $rules = [
-        'blog.title' => 'required|min:6',
+        'blog.title' => 'required|max:255',
+        'blog.contents' => 'required',
+        'thumbnail' => 'image',
     ];
 
     public function mount()
     {
         $this->blog['contents'] = '';
         $this->blog['status'] = 'Drafted';
-        $this->blogCategory= [];
-        $this->optionCategory = eloquent_to_options(Tag::get(), 'id', 'title');
+        $this->blog['tag_id'] = '1';
+        $this->blog['user_id'] = Auth::id();
+        // $this->blogCategory= [];
+        // $this->optionCategory = eloquent_to_options(Tag::get(), 'id', 'title');
+        $this->optionCategory =  [['value'=>'1','title'=>'Pengumuman'],
+        ['value'=>'2','title'=>'Informasi']];
         $this->optionStatus=[
             ['value'=>'Published','title'=>'Published'],
             ['value'=>'Drafted','title'=>'Drafted'],
@@ -38,6 +46,8 @@ class FormBlog extends Component
                 'title'=>$m->title,
                 'slug'=>$m->slug,
                 'status'=>$m->status,
+                'thumbnail'=> $m->thumbnail,
+                'tag_id'=>$m->tag_id,
                 'contents'=>$m->contents
             ];
         }
@@ -50,25 +60,11 @@ class FormBlog extends Component
 
     public function create()
     {
+        // @dd($this->blog);
         $this->validate();
-        $this->blogCategory = collect($this->blogCategory)->map(function($i){
-            switch ($i) {
-                case "1":
-                    return "Informasi";
-                    break;
-                case "2":
-                    return "Pengumuman";
-                    break;
-                case "3":
-                    return "Info Lomba";
-                    break;
-                default:
-                    return "Uncategorized";
-            }
-        });
-        $this->blog['category'] = $this->blogCategory;
-        $this->blog['slug'] = Str::of($this->blog['title'])->slug('-');
-        // dd($this->blog);
+        
+        $this->blog['thumbnail'] = md5(rand()).'.'.$this->thumbnail->getClientOriginalExtension();
+        $this->thumbnail->storeAs('public/img/blog/', $this->blog['thumbnail']);
         Blog::create($this->blog);
 
         $this->emit('swal:alert', [
@@ -81,6 +77,11 @@ class FormBlog extends Component
     }
 
     public function update() {
+        if ($this->thumbnail!=NULL) {
+            $this->blog['thumbnail'] ??= md5(rand()).'.'.$this->thumbnail->getClientOriginalExtension();
+            $this->thumbnail->storeAs('public/img/blog/', $this->blog['thumbnail']);
+        }
+        
         Blog::find($this->dataId)->update($this->blog);
 
         $this->emit('swal:alert', [

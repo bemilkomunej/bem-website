@@ -76,7 +76,15 @@ if (Auth::user()->role==1) {
                 ["href" => "admin.member.index", "text" => "Data Member BEM"],
                 ["href" => "admin.member.create", "text" => "Tambah Member BEM"]
                 ]
-            ]
+            ],
+            [
+                    "section_text" => "Blog",
+                    "section_icon" => "fa fa-users",
+                    "section_list" => [
+                        ["href" => "admin.blog.index", "text" => "Data Blog"],
+                        ["href" => "admin.blog.create", "text" => "Tambah Blog"]
+                        ]
+                ],
         ],
             "text" => "Manajemen BEM",
             "is_multi" => true,
@@ -128,7 +136,7 @@ if (Auth::user()->role==1) {
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('admin.dashboard') }}">
-                <img class="d-inline-block" width="32px" height="30.61px" src="" alt="">
+                <img class="d-inline-block" width="32px" height="30.61px" src="{{ asset('template-assets/img/logo/apple-icon.png') }}" alt="">
             </a>
         </div>
         @foreach ($navigation_links as $link)

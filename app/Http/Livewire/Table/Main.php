@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Table;
 
 use Livewire\Component;
+use Illuminate\Support\Facades\Storage;
 use Livewire\WithPagination;
 
 class Main extends Component
@@ -52,26 +53,26 @@ class Main extends Component
                 ];
                 break;
 
-                case 'blog':
-                    $blogs = $this->model::search($this->search)
-                        ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
-                        ->paginate($this->perPage);
-    
-                    return [
-                        "view" => 'livewire.table.blog',
-                        "blogs" => $blogs,
-                        "data" => array_to_object([
-                            'href' => [
-                                'create_new' => route('admin.blog.create'),
-                                'create_new_text' => 'Buat Blog Baru',
-                                'export' => '#',
-                                'export_text' => 'Export'
-                            ]
-                        ])
-                    ];
-                    break;
-            
-                case 'member':
+            case 'blog':
+                $blogs = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.blog',
+                    "blogs" => $blogs,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('admin.blog.create'),
+                            'create_new_text' => 'Buat Blog Baru',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+        
+            case 'member':
                 $members = $this->model::search($this->search)
                     ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
                     ->paginate($this->perPage);
@@ -182,6 +183,10 @@ class Main extends Component
                 "message" => "Gagal menghapus data " . $this->name
             ]);
             return;
+        }
+        if($data->thumbnail != NULL){
+            Storage::delete('public/img/blog/'.$data->thumbnail);
+            Storage::delete('public/img/member/'.$data->thumbnail);
         }
 
         $data->delete();

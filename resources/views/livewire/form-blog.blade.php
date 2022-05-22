@@ -7,11 +7,28 @@
 {{-- <x-time title="sa" model="blog.time" :time="$blog['time']"/>--}}
 
         {{-- <x-daterange title="sa" model="blog.timeaaa" />--}}
-        <x-select2 :options="$optionCategory" :selected="$blogCategory" title="Kategori" model="blogCategory"/>
+        {{-- <x-select2 :options="$optionCategory" :selected="$blogCategory" title="Kategori" model="blogCategory"/> --}}
+
+        <x-input type="file" title="Thumbnail" model="thumbnail"/>
+        @error('thumbnail') <span class="error">{{ $message }}</span> @enderror
+        <div wire:loading wire:target="thumbnail">
+            Proses upload, harap tunggu hingga gambar tertampilkan
+        </div>
+        @if($action=='create')
+            @if($thumbnail)
+                <img src="{{$thumbnail->temporaryUrl()}}" alt="" style="max-height: 300px; margin-bottom: 20px">
+            @endif
+        @else
+            @if($thumbnail)
+                <img src="{{$thumbnail->temporaryUrl()}}" alt="" style="max-height: 300px; margin-bottom: 20px">
+            @else
+                <img src="{{ asset('storage/img/blog/'.$this->blog['thumbnail']) }}" alt="" style="max-height: 300px; margin-bottom: 20px">
+            @endif
+        @endif
 
         <x-select :options="$optionStatus" :selected="$blog['status']" title="Status" model="blog.status"/>
-
-        <x-summernote title="contents" model="blog.contents"/>
+        <x-select :options="$optionCategory" :selected="$blog['tag_id']" title="Category" model="blog.tag_id"/>
+        <x-summernote title="Contents" model="blog.contents"/>
 
         
 

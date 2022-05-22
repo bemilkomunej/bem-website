@@ -18,6 +18,8 @@ class CreateMembersTable extends Migration
             $table->string('name');
             $table->string('division');
             $table->string('position');
+            $table->string('linkedin');
+            $table->string('instagram');
             $table->string('thumbnail');
             $table->timestamps();
         });

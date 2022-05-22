@@ -18,10 +18,11 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->longText('contents');
             $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreignId('tag_id')->nullable();
             // $table->bigInteger('view')->default(0);
             $table->string('slug')->unique();
-            $table->string('status')->default('waiting');
-            // $table->string('thumbnail');
+            $table->string('status')->default('Drafted');
+            $table->string('thumbnail')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')

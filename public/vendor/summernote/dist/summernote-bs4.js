@@ -4328,7 +4328,9 @@
               $target.toggleClass('note-float-left', value === 'left');
               $target.toggleClass('note-float-center', value === 'center');
               $target.toggleClass('note-float-right', value === 'right');
-              $target.css('float', (value === 'none' ? '' : value));
+
+                  $target.css('float', (value === 'none' || value === 'center' ? '' : value));
+                  $target.parent().css('text-align',  (value === 'none' || value === 'left' || value === 'right' ? '' : value));
           });
           /**
            * resize overlay element
@@ -6110,7 +6112,7 @@
       /**
        * image: [
        *   ['imageResize', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
-       *   ['float', ['floatLeft', 'floatRight', 'floatNone']],
+       *   ['float', ['floatLeft', 'floatCenter','floatRight', 'floatNone']],
        *   ['remove', ['removeMedia']],
        * ],
        */
@@ -7517,11 +7519,12 @@
           toolbar: [
               ['style', ['style']],
               ['font', ['bold', 'underline', 'clear']],
-              ['fontname', ['fontname']],
+            //   ['fontname', ['fontname']],
+              ['fontsize', ['fontsize']],
               ['color', ['color']],
               ['para', ['ul', 'ol', 'paragraph']],
               ['table', ['table']],
-              ['insert', ['link', 'picture', 'video']],
+              ['insert', ['link', 'picture', 'video', 'hr']],
               ['view', ['fullscreen', 'codeview', 'help']],
           ],
           // popover

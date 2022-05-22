@@ -83,8 +83,15 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
+        if (["/","/psdm","/kominfo","/luardalam","/perekonomian","/rumahtangga", "/adkesma"].includes(window.location.pathname)){
+        selectHeader.classList.remove('landing')
+      }
+        
       } else {
         selectHeader.classList.remove('header-scrolled')
+        if (["/","/psdm","/kominfo","/luardalam","/perekonomian","/rumahtangga", "/adkesma"].includes(window.location.pathname)){
+        selectHeader.classList.add('landing')
+      }
       }
     }
     window.addEventListener('load', headerScrolled)

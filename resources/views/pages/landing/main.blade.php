@@ -50,7 +50,7 @@ https://templatemo.com/tm-561-purple-buzz
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('ppmb') }}">PPMB</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('tentang-kami') }}">Tentang Kami</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('profil') }}">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link banner-button btn rounded-pill btn-outline-primary btn-sm px-md-4" href="{{ route('login') }}" role="button"><i class="fa fa-user"></i>     Login</a>
@@ -115,7 +115,7 @@ https://templatemo.com/tm-561-purple-buzz
                                 <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="{{ route('home') }}">Beranda</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('tentang-kami') }}">Tentang Kami</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('profil') }}">Tentang Kami</a>
                             </li>
 {{--                            <li class="pb-2">--}}
 {{--                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ route('blog') }}">Blog</a>--}}

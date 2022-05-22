@@ -15,6 +15,8 @@ class BlogFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
+            'user_id' => 1,
+            'tag_id' => 1,
             'slug' => $this->faker->slug(),
             'status' => $this->faker->randomElement($array =['Published','Drafted']),
             'contents' => $this->faker->paragraph(),
