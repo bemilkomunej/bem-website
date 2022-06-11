@@ -2,26 +2,25 @@
 @section('content')
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="hero d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 d-flex flex-column justify-content-center">
-        <h1 data-aos="fade-up">Kementerian Kominfo</h1>
-        <!-- <h1 data-aos="fade-up" data-aos-delay="400"></h1> -->
-        <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Mengelola dan mengembangkan media informasi dan komunikasi BEM Fasilkom UNEJ</h4>
-        <div data-aos="fade-up" data-aos-delay="600">
-          <div class="text-center text-lg-start">
-            <a href="#services" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-              <span>Detail</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">Kementerian Kominfo</h1>
+                <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Mengelola dan mengembangkan media informasi dan komunikasi BEM Fasilkom UNEJ</h4>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-center text-lg-start">
+                        <a href="#services" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Detail</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src={{asset("landing2/assets/img/team/Team-Kominfo.png")}} class="img-fluid" alt="">
+            </div>
         </div>
-      </div>
-      <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-        <img src={{asset("landing2/assets/img/team/Team-Kominfo.png")}} class="img-fluid" alt="">
-      </div>
     </div>
-  </div>
 
 </section><!-- End Hero -->
 <main id="main">
@@ -56,39 +55,39 @@
                 </div>
 
                 {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"> --}}
-                    {{-- <div class="service-box green"> --}}
-                        {{-- <i class="ri-discuss-line icon"></i> --}}
-                        {{-- <h3>Ledo Markt</h3> --}}
-                        {{-- <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p> --}}
-                        {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-                    {{-- </div> --}}
+                {{-- <div class="service-box green"> --}}
+                {{-- <i class="ri-discuss-line icon"></i> --}}
+                {{-- <h3>Ledo Markt</h3> --}}
+                {{-- <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p> --}}
+                {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                {{-- </div> --}}
                 {{-- </div> --}}
 
                 {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500"> --}}
-                    {{-- <div class="service-box red"> --}}
-                        {{-- <i class="ri-discuss-line icon"></i> --}}
-                        {{-- <h3>Asperiores Commodi</h3> --}}
-                        {{-- <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p> --}}
-                        {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-                    {{-- </div> --}}
+                {{-- <div class="service-box red"> --}}
+                {{-- <i class="ri-discuss-line icon"></i> --}}
+                {{-- <h3>Asperiores Commodi</h3> --}}
+                {{-- <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p> --}}
+                {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                {{-- </div> --}}
                 {{-- </div> --}}
 
                 {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600"> --}}
-                    {{-- <div class="service-box purple"> --}}
-                        {{-- <i class="ri-discuss-line icon"></i> --}}
-                        {{-- <h3>Velit Doloremque.</h3> --}}
-                        {{-- <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p> --}}
-                        {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-                    {{-- </div> --}}
+                {{-- <div class="service-box purple"> --}}
+                {{-- <i class="ri-discuss-line icon"></i> --}}
+                {{-- <h3>Velit Doloremque.</h3> --}}
+                {{-- <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p> --}}
+                {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                {{-- </div> --}}
                 {{-- </div> --}}
 
                 {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700"> --}}
-                    {{-- <div class="service-box pink"> --}}
-                        {{-- <i class="ri-discuss-line icon"></i> --}}
-                        {{-- <h3>Dolori Architecto</h3> --}}
-                        {{-- <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p> --}}
-                        {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
-                    {{-- </div> --}}
+                {{-- <div class="service-box pink"> --}}
+                {{-- <i class="ri-discuss-line icon"></i> --}}
+                {{-- <h3>Dolori Architecto</h3> --}}
+                {{-- <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p> --}}
+                {{-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> --}}
+                {{-- </div> --}}
                 {{-- </div> --}}
 
             </div>
@@ -114,17 +113,13 @@
                         <div class="member-img">
                             <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid" alt="{{ $member->name }}">
                             <div class="social">
-                                <!-- <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a> -->
-              <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
+                                <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
                                 <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
                             <h4 class="text-truncate">{{ $member->name }}</h4>
                             <span>{{ $member->position . ' ' . $member->division }}</span>
-                            <!-- <p>{{ $member->division }}</p> -->
-                            <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
                         </div>
                     </div>
                 </div>
