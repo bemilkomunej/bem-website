@@ -120,7 +120,7 @@ if (Auth::user()->role==1) {
                 ]
             ],
         ],
-        "text" => "Manajemen",
+        "text" => "Manajemen PPMB",
         "is_multi" => true,
     ];
         array_push($links, $add);
