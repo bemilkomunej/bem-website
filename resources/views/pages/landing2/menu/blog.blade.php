@@ -57,8 +57,6 @@
           <div class="entry-content">
             <p>
               {{ Str::limit(strip_tags($blog->contents),200) }}
-              <!-- Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-              Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore. -->
             </p>
             <div class="read-more">
               <a href="/blog/{{ $blog->slug }}">Read More</a>
@@ -70,11 +68,6 @@
 
         <div class="blog-pagination">
           {{ $blogs->links() }}
-          <!-- <ul class="justify-content-center">
-            <li><a href="#">1</a></li>
-            <li class="active"><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          </ul> -->
         </div>
 
       </div><!-- End blog entries list -->
@@ -114,30 +107,6 @@
               <time datetime="{{ $blog->created_at->format('yyyy-mm-dd') }}">{{ $blog->created_at->format('M d, Y') }}</time>
             </div>
             @endforeach
-
-            <!-- <div class="post-item clearfix">
-              <img src={{ asset("landing2/assets/img/blog/blog-recent-2.jpg") }} alt="">
-              <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
-              <time datetime="2020-01-01">Jan 1, 2020</time>
-            </div>
-
-            <div class="post-item clearfix">
-              <img src={{ asset("landing2/assets/img/blog/blog-recent-3.jpg") }} alt="">
-              <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-              <time datetime="2020-01-01">Jan 1, 2020</time>
-            </div>
-
-            <div class="post-item clearfix">
-              <img src={{ asset("landing2/assets/img/blog/blog-recent-4.jpg") }} alt="">
-              <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
-              <time datetime="2020-01-01">Jan 1, 2020</time>
-            </div>
-
-            <div class="post-item clearfix">
-              <img src={{ asset("landing2/assets/img/blog/blog-recent-5.jpg") }} alt="">
-              <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
-              <time datetime="2020-01-01">Jan 1, 2020</time>
-            </div> -->
 
           </div><!-- End sidebar recent posts-->
 
