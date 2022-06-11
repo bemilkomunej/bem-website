@@ -60,11 +60,6 @@ Route::get('/psdm', [SiteController::class, 'psdm'])->name('psdm');
 Route::get('/perekonomian', [SiteController::class, 'perekonomian'])->name('perekonomian');
 Route::get('/rumahtangga', [SiteController::class, 'rumahtangga'])->name('rumahtangga');
 
-
-
-
-
-
 Route::get('update-photo',function (){
     return redirect(route('admin.profile.show'));
 })->name('profile.show');
@@ -113,6 +108,15 @@ Route::name('admin.')->prefix('admin')->middleware(['auth:sanctum','web', 'verif
 
 });
 
+Route::get('/foo', function () {
+    // Artisan::call('storage:link');
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    $targetFolder = $_SERVER['DOCUMENT_ROOT'].'/storage/app/public';
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'].'/public/storage';
+    echo $targetFolder;
+    echo $linkFolder;
+
+});
 Route::get('/{shortlink}',function ($shortlink){
     return redirect('https://unej.id/'.$shortlink);
 });
