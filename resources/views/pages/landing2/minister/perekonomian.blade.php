@@ -6,7 +6,6 @@
     <div class="row">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
         <h1 data-aos="fade-up">Kementerian Perekonomian</h1>
-        <!-- <h1 data-aos="fade-up" data-aos-delay="400"></h1> -->
         <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Menjalin hubungan kerjasama kemitraan dengan stakeholder dari dalam maupun luar Fakultas Ilmu Komputer Universitas Jember</h4>
         <div data-aos="fade-up" data-aos-delay="600">
           <div class="text-center text-lg-start">
@@ -69,8 +68,6 @@
                         <div class="member-img">
                             <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid" alt="{{ $member->name }}">
                             <div class="social">
-                                <!-- <a href=""><i class="bi bi-twitter"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a> -->
               <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
                                 <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
                             </div>
@@ -78,8 +75,6 @@
                         <div class="member-info">
                             <h4 class="text-truncate">{{ $member->name }}</h4>
                             <span>{{ $member->position . ' ' . $member->division }}</span>
-                            <!-- <p>{{ $member->division }}</p> -->
-                            <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
                         </div>
                     </div>
                 </div>
