@@ -11,7 +11,7 @@
   <meta content="Website Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href={{asset("landing2/assets/img/favicon.png")}} rel="icon"> -->
+  <!-- <link href={{asset("landing2/assets/img/icon/favicon.png")}} rel="icon"> -->
   <link href={{asset("landing2/assets/img/icon/apple-icon.png")}} rel="icon">
   <link href={{asset("landing2/assets/img/icon/apple-touch-icon.png")}} rel="apple-touch-icon">
 
@@ -44,18 +44,12 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="/" class="logo d-flex align-items-center">
-        <!-- <img src={{asset("landing2/assets/img/logo.png")}} alt=""> -->
-        <img src={{asset('template-assets/img/logo/apple-icon.png')}} alt="Logo Bem">
+        <img src={{asset('landing2/assets/img/icon/apple-icon.png')}} alt="Logo Bem">
         <span>BEM Fasilkom</span>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
           <li><a href="{{ route('home') }}">Beranda</a></li>
           <li><a href="{{ route('blog') }}">Berita</a></li>
           <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
@@ -72,12 +66,12 @@
                   <li><a href="{{ route('luardalam') }}">Luar Dalam</a></li>
                 </ul>
               </li>
-              
+
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-            <li><a href="https://uc3.unej.ac.id/">Pengaduan</a></li>
+              <li><a href="https://uc3.unej.ac.id/">Pengaduan</a></li>
               <li><a href="https://ilkom.unej.ac.id/pusat-informasi-dan-layanan/">Administrasi</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -107,29 +101,28 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-{{--    <div class="footer-newsletter"> --}}
-{{--      <div class="container"> --}}
-{{--        <div class="row justify-content-center"> --}}
-{{--          <div class="col-lg-12 text-center"> --}}
-{{--            <h4>Our Newsletter</h4> --}}
-{{--            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
-{{--          </div> --}}
-{{--          <div class="col-lg-6"> --}}
-{{--            <form action="" method="post"> --}}
-{{--              <input type="email" name="email"><input type="submit" value="Subscribe"> --}}
-{{--            </form> --}}
-{{--          </div> --}}
-{{--        </div> --}}
-{{--      </div> --}}
-{{--    </div> --}}
+    {{-- <div class="footer-newsletter"> --}}
+    {{-- <div class="container"> --}}
+    {{-- <div class="row justify-content-center"> --}}
+    {{-- <div class="col-lg-12 text-center"> --}}
+    {{-- <h4>Our Newsletter</h4> --}}
+    {{-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
+    {{-- </div> --}}
+    {{-- <div class="col-lg-6"> --}}
+    {{-- <form action="" method="post"> --}}
+    {{-- <input type="email" name="email"><input type="submit" value="Subscribe"> --}}
+    {{-- </form> --}}
+    {{-- </div> --}}
+    {{-- </div> --}}
+    {{-- </div> --}}
+    {{-- </div> --}}
 
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="/" class="logo d-flex align-items-center">
-              {{-- <img src={{asset("landing2/assets/img/logo.png")}} alt=""> --}}
-              <img src={{asset('template-assets/img/logo/apple-icon.png')}} alt="">
+              <img src={{asset('landing2/assets/img/icon/apple-icon.png')}} alt="Logo Bem">
               <span>BEMILKOMUNEJ</span>
             </a>
             <p>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
@@ -147,21 +140,10 @@
               <li><i class="bi bi-chevron-right"></i> <a href="/">Beranda</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="/blog">Berita</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="{{ route('kabinet') }}">Kabinet</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="{{route('profil')}}">Profil</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="{{route('ppmb')}}">PPMB</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('profil') }}">Profil</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="{{ route('ppmb') }}">PPMB</a></li>
             </ul>
           </div>
-
-          <!-- <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
 
           <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
             <h4>Hubungi Kami</h4>
@@ -181,7 +163,11 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span><script>document.write(/\d{4}/.exec(Date())[0])</script></span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>
+            <script>
+              document.write(/\d{4}/.exec(Date())[0])
+            </script>
+          </span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -203,10 +189,12 @@
   <script src={{asset("landing2/assets/vendor/isotope-layout/isotope.pkgd.min.js")}}></script>
   <script src={{asset("landing2/assets/vendor/swiper/swiper-bundle.min.js")}}></script>
   <script src={{asset("landing2/assets/vendor/php-email-form/validate.js")}}></script>
+
   @yield('customscript')
+  
   <!-- Template Main JS File -->
   <script src={{asset("landing2/assets/js/main.js")}}></script>
-  
+
   @livewireScripts
 </body>
 
