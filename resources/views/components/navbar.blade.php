@@ -12,13 +12,11 @@ $user = auth()->user();
     </form>
     <ul class="navbar-nav navbar-right">
         <li class="dropdown"><a href="#" data-turbolinks="false" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            @if (!is_null($user))
-                <div class="d-sm-none d-lg-inline-block">Hi, {{ $user->name }}</div></a>
-            @else
-                <div class="d-sm-none d-lg-inline-block">Hi, Welcome</div></a>
-            @endif
+                <div class="d-sm-none d-lg-inline-block">Hi, {{ $user->name ?? 'Welcome' }}</div>
+            </a>
+
             <div class="dropdown-menu dropdown-menu-right">
-                <a href="{{route('admin.profile.show')}}" class="dropdown-item has-icon">
+                <a href="{{ route('admin.profile.show') }}" class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
                 </a>
                 @if (request()->get('is_admin'))
