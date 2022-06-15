@@ -1,0 +1,9 @@
+---
+ 
+deployment:
+ 
+ tasks:
+ 
+ - export DEPLOYPATH=/home/bemilkom/bem22.bemilkomunej.com
+ 
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete

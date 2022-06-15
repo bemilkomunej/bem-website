@@ -92,7 +92,7 @@
             Program Pengembangan dan Pembinaan Mahasiswa Baru mengajarkan hal baru bagi saya terkait lingkungan kampus, tata krama dan sopan santun selama menjadi mahasiswa
           </p>
           <div class="profile mt-auto">
-            <img src={{asset("landing2/assets/img/testimonials/rio.jpg")}} class="testimonial-img" alt="">
+            <img src={{asset("landing2/assets/img/testimonials/rio.jpg")}} class="testimonial-img" alt="Rio Alvian Syach">
             <h3>Rio Alviansyach</h3>
             <h4>Ketua PPMB 2021</h4>
           </div>
@@ -108,7 +108,7 @@
             Melalui kegiatan PPMB saya dapat mengerti dan memahami pentingnya mengenal rekan sesama mahasiswa. Disini saya membentuk rasa kekeluargaan dengan seluruh mahasiswa baru
           </p>
           <div class="profile mt-auto">
-            <img src={{asset("landing2/assets/img/testimonials/bagas.jpg")}} class="testimonial-img" alt="">
+            <img src={{asset("landing2/assets/img/testimonials/bagas.jpg")}} class="testimonial-img" alt="Bagas Suryadika Miranda">
             <h3>Bagas Suryadika Miranda</h3>
             <h4>Ketua BEM 2020</h4>
           </div>
@@ -124,7 +124,7 @@
             Cara terbaik dan tercepat untuk beradaptasi di lingkungan kampus adalah dengan mengenal teman satu angkatan, program PPMB membantu saya untuk beradaptasi menjadi lebih baik
           </p>
           <div class="profile mt-auto">
-            <img src={{asset("landing2/assets/img/testimonials/azriel.jpg")}} class="testimonial-img" alt="">
+            <img src={{asset("landing2/assets/img/testimonials/azriel.jpg")}} class="testimonial-img" alt="Muhammad Andi Azriel Akbar">
             <h3>Muhammad Andi Azriel Akbar</h3>
             <h4>Ketua PPMB 2022</h4>
           </div>
@@ -140,7 +140,7 @@
             Tak kenal maka tak tahu, program PPMB membantu saya dalam memperluas relasi pertemanan tidak hanya teman satu angkatan namun juga kakak tingkat
           </p>
           <div class="profile mt-auto">
-            <img src={{asset("landing2/assets/img/testimonials/naufal.jpg")}} class="testimonial-img" alt="">
+            <img src={{asset("landing2/assets/img/testimonials/naufal.jpg")}} class="testimonial-img" alt="Muhammad Naufal Hafiyyan">
             <h3>Muhammad Naufal Hafiyyan</h3>
             <h4>Ketua Bem 2021</h4>
           </div>
@@ -153,7 +153,7 @@
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
           </div>
           <p>
-            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+            PPMB membantu saya beradaptasi dengan lingkungan kampus dengan cepat dan lebih baik
           </p>
           <div class="profile mt-auto">
             <img src={{asset("landing2/assets/img/testimonials/testimonials-5.jpg")}} class="testimonial-img" alt="">
