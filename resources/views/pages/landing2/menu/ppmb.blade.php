@@ -156,9 +156,9 @@
             PPMB membantu saya beradaptasi dengan lingkungan kampus dengan cepat dan lebih baik
           </p>
           <div class="profile mt-auto">
-            <img src={{asset("landing2/assets/img/testimonials/testimonials-5.jpg")}} class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
+            <img src={{asset("landing2/assets/img/testimonials/fiki.png")}} class="testimonial-img" alt="">
+            <h3>Fiki Aviantono</h3>
+            <h4>Mahasiswa TI</h4>
           </div>
         </div>
       </div><!-- End testimonial item -->

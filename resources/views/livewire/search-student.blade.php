@@ -23,7 +23,7 @@
                     <div class="member">
                     <a href="/ppmb/{{ $c->nim }}">
                         <div class="member-img">
-                            <img src={{asset("landing2/assets/img/team/team-4.jpg")}} class="img-fluid" alt="{{ $c->name }}">
+                            <img src="https://spesialis1.orthopaedi.fk.unair.ac.id/wp-content/uploads/2021/02/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" class="img-fluid" alt="{{ $c->name }}">
                             <!-- <div class="social">
                         <a href="https://instagram.com/bemilkomunej"><i class="bi bi-instagram"></i></a>
                         <a href="https://linkedin.com/company/bemilkom"><i class="bi bi-linkedin"></i></a>

@@ -136,7 +136,7 @@ if (Auth::user()->role==1) {
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('admin.dashboard') }}">
-                <img class="d-inline-block" width="32px" height="30.61px" src="{{ asset('template-assets/img/logo/apple-icon.png') }}" alt="">
+                <img class="d-inline-block" width="32px" height="30.61px" src="{{ asset('template-assets/img/logo/bem-logo-small.png') }}" alt="">
             </a>
         </div>
         @foreach ($navigation_links as $link)
