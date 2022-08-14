@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">Kementerian Adkesma</h1>
+                <h1 data-aos="fade-up">Divisi Adkesma</h1>
                 <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Mencari, mengkaji dan menindaklanjuti persoalan-persoalan yang ada di dalam lingkungan Fakultas Ilmu Komputer Universitas Jember dengan data-data yang di dapat dari dalam maupun luar Fakultas Ilmu Komputer Universitas Jember.</h4>
                 <div data-aos="fade-up" data-aos-delay="600">
                     <div class="text-center text-lg-start">

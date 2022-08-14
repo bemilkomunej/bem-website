@@ -61,7 +61,7 @@ class SiteController extends Controller
         'p_detail' => $p_detail]);
     }
 
-    // Kementerian
+    // Divisi
     public function kominfo(){
         return view('pages.landing2.minister.kominfo',  ["members" => Member::where('division', 'KOMINFO')->get()]);
     }

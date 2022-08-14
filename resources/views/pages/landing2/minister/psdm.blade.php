@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">Kementerian PSDM</h1>
+                <h1 data-aos="fade-up">Divisi PSDM</h1>
                 <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Memberdayakan dan mengembangkan sumber daya mahasiswa dalam manajerial diri dan pola pikir keorganisasian;</h4>
                 <div data-aos="fade-up" data-aos-delay="600">
                     <div class="text-center text-lg-start">
@@ -66,8 +66,8 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-box red">
                         <i class="ri-discuss-line icon"></i>
-                        <h3>Staf Muda</h3>
-                        <p>Staf Muda BEM Fakultas Ilmu Komputer adalah suatu program kerja yang berorientasi pada pembinaan dan pengembangan yang berada pada naungan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
+                        <h3>FORGATE</h3>
+                        <p>FORGATE BEM Fakultas Ilmu Komputer adalah suatu program kerja yang berorientasi pada pembinaan dan pengembangan yang berada pada naungan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
                         <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     <div class="service-box purple">
                         <i class="ri-discuss-line icon"></i>
                         <h3>PKKMB</h3>
-                        <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                        <p>Program Pengenalan Kehidupan Kampus bagi Mahasiswa Baru agar mahasiswa dapat beradaptasi dengan lingkungan baru</p>
                         <a href="https://www.instagram.com/pkkmb_ilkomunej/" class="read-more"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="service-box pink">
                         <i class="ri-discuss-line icon"></i>
                         <h3>PPMB</h3>
-                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                        <p>Pembinaan dan Pengembangan Mahasiswa Baru untuk memberikan edukasi dan melatih kedisiplinan mahasiswa baru sebelum mengikuti perkuliahan di kampus</p>
                         <a href="https://instagram.com/ppmb_ilkomunej" class="read-more"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
 
             <header class="section-header">
                 <h2>ANGGOTA</h2>
-                <p>Daftar Anggota Kominfo</p>
+                <p>Daftar Anggota PSDM</p>
             </header>
 
             <div class="row gy-4">

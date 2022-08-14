@@ -56,7 +56,7 @@
             <ul>
               <li><a href="{{ route('profil') }}">Profil</a></li>
               <li><a href="{{ route('kabinet')}}">Kabinet</a></li>
-              <li class="dropdown"><a href="#"><span>Kementerian</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="#"><span>Divisi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{ route('kominfo') }}">Kominfo</a></li>
                   <li><a href="{{ route('perekonomian') }}">Perekonomian</a></li>

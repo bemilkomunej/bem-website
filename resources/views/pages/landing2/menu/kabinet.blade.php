@@ -173,8 +173,8 @@
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
-        <h2>KEMENTERIAN</h2>
-        <p>Kementerian Bem Fasilkom Unej</p>
+        <h2>Divisi</h2>
+        <p>Divisi Bem Fasilkom Unej</p>
       </header>
 
       <div class="row">
@@ -182,24 +182,24 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <div class="box">
             <img src={{asset("landing2/assets/img/team/Team-PSDM.png")}} class="img-fluid" alt="PSDM Squad">
-            <h3>Kementerian PSDM</h3>
-            <p>Divisi (Kementerian) Pengembangan Sumber Daya Mahasiswa berorientasi pada potensi manajerial dan mengembangkan kemampuan dalam bidang organisasi individu maupun berkelompok;</p>
+            <h3>Divisi PSDM</h3>
+            <p>Divisi Pengembangan Sumber Daya Mahasiswa berorientasi pada potensi manajerial dan mengembangkan kemampuan dalam bidang organisasi individu maupun berkelompok;</p>
           </div>
         </div>
 
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
           <div class="box">
             <img src={{asset("landing2/assets/img/team/Team-Kominfo.png")}} class="img-fluid" alt="Kominfo Squad">
-            <h3>Kementerian KOMINFO</h3>
-            <p>Divisi (Kementerian) Komunikasi dan Informasi yang berorientasi pada komunikasi, mengelola informasi di bidang ilmu komputer, serta sebagai penyedia media informasi dan komunikasi BEM Fasilkom UNEJ.</p>
+            <h3>Divisi KOMINFO</h3>
+            <p>Divisi Komunikasi dan Informasi yang berorientasi pada komunikasi, mengelola informasi di bidang ilmu komputer, serta sebagai penyedia media informasi dan komunikasi BEM Fasilkom UNEJ.</p>
           </div>
         </div>
 
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
           <div class="box">
             <img src={{asset("landing2/assets/img/team/Team-ADKESMA.png")}} class="img-fluid" alt="Adkesma Squad">
-            <h3>Kementerian ADKESMA</h3>
-            <p>Divisi (Kementerian) Advokasi dan Kesatuan Mahasiswa yang berorientasi pada persatuan
+            <h3>Divisi ADKESMA</h3>
+            <p>Divisi Advokasi dan Kesatuan Mahasiswa yang berorientasi pada persatuan
               mahasiswa dan memperjuangkan hasil keputusan forum bersama.</p>
           </div>
         </div>
@@ -207,8 +207,8 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <div class="box">
             <img src={{asset("landing2/assets/img/team/Team-LuarDalam.png")}} class="img-fluid" alt="Luar Dalam Squad">
-            <h3>Kementerian LuarDalam</h3>
-            <p>Divisi (Kementerian) Luar Dalam yang berorientasi pada memperkenalkan Fasilkom,
+            <h3>Divisi LuarDalam</h3>
+            <p>Divisi Luar Dalam yang berorientasi pada memperkenalkan Fasilkom,
               dan menjalin koordinasi, konsolidasi, dan monitoring juga hubungan baik dengan
               lembaga mahasiswa Fakultas Ilmu Komputer Universitas Jember termasuk pengurus
               BEM Fasilkom UNEJ;</p>
@@ -218,8 +218,8 @@
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
           <div class="box">
             <img src={{asset("landing2/assets/img/team/Team-RumahTangga.png")}} class="img-fluid" alt="Rumah Tangga Squad">
-            <h3>Kementerian RumahTangga</h3>
-            <p>Divisi (Kementerian) Minat Bakat (Rumah Tangga) yang berorientasi pada
+            <h3>Divisi RumahTangga</h3>
+            <p>Divisi Minat Bakat (Rumah Tangga) yang berorientasi pada
               penjaringan dan peningkatan mahasiswa dibidang akademik dan non-akademik baik
               individu maupun kelompok serta koordinasi dengan Unit Kegiatan Mahasiswa</p>
           </div>
@@ -228,8 +228,8 @@
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
           <div class="box">
             <img src={{asset("landing2/assets/img/team/Team-Perekonomian.png")}} class="img-fluid" alt="Perekonomian Squad">
-            <h3>Kementerian Perekonomian</h3>
-            <p>Divisi (Kementerian) Perekonomian yang berorientasi pada kesejahteraan BEM Fasilkom UNEJ melalui kegiatan untuk menambah pemasukan dalam bentuk apapun</p>
+            <h3>Divisi Perekonomian</h3>
+            <p>Divisi Perekonomian yang berorientasi pada kesejahteraan BEM Fasilkom UNEJ melalui kegiatan untuk menambah pemasukan dalam bentuk apapun</p>
           </div>
         </div>
 

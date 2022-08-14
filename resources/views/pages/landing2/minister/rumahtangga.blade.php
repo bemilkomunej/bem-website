@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
-        <h1 data-aos="fade-up">Kementerian Rumah Tangga</h1>
+        <h1 data-aos="fade-up">Divisi Rumah Tangga</h1>
         <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Menciptakan koordinasi yang baik terhadap seluruh UKM, ORMAWA, Komunitas, dan Angkatan yang ada di Fakultas Ilmu Komputer Universitas Jember.</h4>
         <div data-aos="fade-up" data-aos-delay="600">
           <div class="text-center text-lg-start">

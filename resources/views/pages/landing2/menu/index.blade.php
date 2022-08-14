@@ -95,7 +95,7 @@
           {{--  <i class="bi bi-headset" style="color: #15be56;"></i> --}}
           {{--  <div> --}}
             {{--  <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span> --}}
-            {{--  <p>Kementerian</p> --}}
+            {{--  <p>Divisi</p> --}}
           {{--  </div> --}}
         {{--  </div> --}}
       {{--  </div> --}}
