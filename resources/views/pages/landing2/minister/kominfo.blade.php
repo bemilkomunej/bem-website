@@ -112,10 +112,10 @@
                     <div class="member">
                         <div class="member-img">
                             <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid" alt="{{ $member->name }}">
-                            <div class="social">
+                           {{-- <div class="social">
                                 <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
                                 <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="member-info">
                             <h4 class="text-truncate">{{ $member->name }}</h4>
