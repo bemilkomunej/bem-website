@@ -6,7 +6,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>BEM FASILKOM UNEJ</title>
-    <meta content="BEM merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer Universitas Jember" name="description">
+    <meta content="BEM merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer Universitas Jember"
+        name="description">
 
     <meta content="Website Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember" name="keywords">
 
@@ -16,7 +17,9 @@
     <link href={{asset("landing2/assets/img/icon/apple-touch-icon.png")}} rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href={{asset("landing2/assets/vendor/aos/aos.css")}} rel="stylesheet">
@@ -34,7 +37,7 @@
   * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    ======================================================== -->
 </head>
 
 <body>
@@ -75,7 +78,7 @@
                             <li><a href="https://ilkom.unej.ac.id/pusat-informasi-dan-layanan/">Administrasi</a></li>
                             <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
                   <li><a href="#">Deep Drop Down 3</a></li>
                   <li><a href="#">Deep Drop Down 4</a></li>
@@ -83,8 +86,10 @@
                 </ul>
               </li> -->
                             <li><a href="https://linktr.ee/oprecbemilkom2k21">Open Recruitment</a></li>
-                            <li><a href="https://drive.google.com/file/d/1jhX0bsRf5wRjFzqlG03ZYN_LvAkdDRIR/view">SOP Kerja Sama</a></li>
-                            <li><a href="https://drive.google.com/file/d/1M0Y3SvxucQDrw8Vk-ZAMfIsvFEXEQLlM/view">SOP Kunjungan</a></li>
+                            <li><a href="https://drive.google.com/file/d/1jhX0bsRf5wRjFzqlG03ZYN_LvAkdDRIR/view">SOP
+                                    Kerja Sama</a></li>
+                            <li><a href="https://drive.google.com/file/d/1M0Y3SvxucQDrw8Vk-ZAMfIsvFEXEQLlM/view">SOP
+                                    Kunjungan</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="{{ route('ppmb') }}">PPMB</a></li>
@@ -128,9 +133,12 @@
                         <p>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
                         <div class="social-links mt-3">
                             <a href="https://t.me/bemilkomunej" class="telegram"><i class="bi bi-telegram"></i></a>
-                            <a href="https://web.facebook.com/bemilkomunej/" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="https://instagram.com/bemilkomunej" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/bemilkom/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://web.facebook.com/bemilkomunej/" class="facebook"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com/bemilkomunej" class="instagram"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/bemilkom/" class="linkedin"><i
+                                    class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
 
@@ -165,7 +173,7 @@
             <div class="copyright">
                 &copy; Copyright <strong><span>
                         <script>
-                            document.write(/\d{4}/.exec(Date())[0])
+                        document.write(/\d{4}/.exec(Date())[0])
                         </script>
                     </span></strong>. All Rights Reserved
             </div>
@@ -179,7 +187,8 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src={{asset("landing2/assets/vendor/purecounter/purecounter.js")}}></script>
