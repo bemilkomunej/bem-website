@@ -159,7 +159,7 @@
                             Jalan. Kalimantan No. 37, <br>
                             Kampus Tegalboto, Jember,<br>
                             Jawa Timur, 68121, Indonesia <br><br>
-                            <strong>Phone:</strong> +62 838 9162 0532<br>
+                            <strong>Phone:</strong> +62 812-3246-0616<br>
                             <strong>Email:</strong> bemilkom@cs.unej.ac.id<br>
                         </p>
 
