@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>BEM Fasilkom Unej</title>
+    <title>BEM FASILKOM UNEJ</title>
     <meta content="BEM merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer Universitas Jember" name="description">
 
     <meta content="Website Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember" name="keywords">
