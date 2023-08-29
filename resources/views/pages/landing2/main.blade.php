@@ -201,9 +201,10 @@
 
     @yield('customscript')
 
+
     <!-- Template Main JS File -->
     <script src={{asset("landing2/assets/js/main.js")}}></script>
-
+    <!-- testing -->
     @livewireScripts
 </body>
 
