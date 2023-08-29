@@ -130,7 +130,7 @@
                             <img src={{asset('landing2/assets/img/icon/apple-icon.png')}} alt="Logo Bem">
                             <span>BEMILKOMUNEJ</span>
                         </a>
-                        <p>Badan Eksekutif Mahasiswa Fakultas ilmu Komputer Universitas Jember.</p>
+                        <p>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
                         <div class="social-links mt-3">
                             <a href="https://t.me/bemilkomunej" class="telegram"><i class="bi bi-telegram"></i></a>
                             <a href="https://web.facebook.com/bemilkomunej/" class="facebook"><i
