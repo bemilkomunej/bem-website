@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>BEM FASILKOM UNEJ</title>
+    <title>BEM FASILKOM UNEJ 2023</title>
     <meta content="BEM merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer Universitas Jember"
         name="description">
 
