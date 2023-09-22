@@ -1,6 +1,9 @@
 ---
+ 
 deployment:
-  tasks:
-    - export DEPLOYPATH=/home/bemilkom/sandyakala.bemilkomunej.com
-
-    - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
+ 
+ tasks:
+ 
+ - export DEPLOYPATH=/home/bemilkom/bem22.bemilkomunej.com
+ 
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
