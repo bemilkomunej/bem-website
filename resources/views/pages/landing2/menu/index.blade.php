@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <h1 data-aos="fade-up">Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember</h1>
-                <h2 data-aos="fade-up" data-aos-delay="400">#BerdedikasiTinggiMembakarAmbisi</h2>
+                <h2 data-aos="fade-up" data-aos-delay="400">#Hanya Testing</h2>
                 <div data-aos="fade-up" data-aos-delay="600">
                     <div class="text-center text-lg-start">
                         <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
@@ -37,7 +37,10 @@
                         <h3>Tentang Kami</h3>
                         <h2>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember</h2>
                         <p style="text-align: justify;">
-                            Badan Eksekutif Mahasiswa (BEM) merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer (FASILKOM) UNEJ. Dalam menjalankan tugas dan fungsinya, BEM FASILKOM UNEJ bertanggung jawab kepada Badan Perwakilan Mahasiswa (BPM) FASILKOM UNEJ yang bersifat representatif terhadap mahasiswa FASILKOM UNEJ.
+                            Badan Eksekutif Mahasiswa (BEM) merupakan lembaga eksekutif tertinggi di Fakultas Ilmu
+                            Komputer (FASILKOM) UNEJ. Dalam menjalankan tugas dan fungsinya, BEM FASILKOM UNEJ
+                            bertanggung jawab kepada Badan Perwakilan Mahasiswa (BPM) FASILKOM UNEJ yang bersifat
+                            representatif terhadap mahasiswa FASILKOM UNEJ.
 
                         </p>
                         <div class="text-center text-lg-start">
@@ -370,16 +373,26 @@
 
     {{-- <div class="clients-slider swiper"> --}}
     {{-- <div class="swiper-wrapper align-items-center"> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-0.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-1.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-2.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-3.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-4.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-5.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-6.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-7.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-8.png")}} class="img-fluid" alt=""></div> --}}
-    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-9.png")}} class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-0.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-1.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-2.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-3.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-4.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-5.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-6.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-7.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-8.png")}}
+    class="img-fluid" alt=""></div> --}}
+    {{-- <div class="swiper-slide"><img src={{asset("landing2/assets/img/clients/ormawa/ormawa-9.png")}}
+    class="img-fluid" alt=""></div> --}}
     {{-- </div> --}}
     {{-- <div class="swiper-pagination"></div> --}}
     {{-- </div> --}}
@@ -406,7 +419,8 @@
                         <span class="post-date">{{ $blog->created_at->format('D, M d') }}</span>
                         <h3 class="post-title">{{ $blog->title }}</h3>
                         <p style="text-align: justify;">{{ Str::limit(strip_tags($blog->contents),100) }}</p>
-                        <a href="/blog/{{ $blog->slug }}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        <a href="/blog/{{ $blog->slug }}" class="readmore stretched-link mt-auto"><span>Read
+                                More</span><i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 @endforeach
@@ -439,7 +453,8 @@
                             </h2>
                             <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                                 <div class="accordion-body">
-                                    Forgate merupakan salah satu program kerja tahunan BEM sebagai wadah bagi mahasiswa yang ingin mengenal lingkungan organisasi serta birokrasi di fasilkom unej.
+                                    Forgate merupakan salah satu program kerja tahunan BEM sebagai wadah bagi mahasiswa
+                                    yang ingin mengenal lingkungan organisasi serta birokrasi di fasilkom unej.
                                 </div>
                             </div>
                         </div>
@@ -452,7 +467,8 @@
                             </h2>
                             <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                                 <div class="accordion-body">
-                                    Pendaftaran anggota baru akan dibuka saat akhir periode kepengurusan bulan desember. Stay tune!
+                                    Pendaftaran anggota baru akan dibuka saat akhir periode kepengurusan bulan desember.
+                                    Stay tune!
                                 </div>
                             </div>
                         </div>
@@ -465,7 +481,8 @@
                             </h2>
                             <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                                 <div class="accordion-body">
-                                    Bagi yang ingin melakukan studi banding/sarasehan dapat langsung menghubungi departemen hubungan masyarakat dengan memberikan detail serta proposal kegiatan.
+                                    Bagi yang ingin melakukan studi banding/sarasehan dapat langsung menghubungi
+                                    departemen hubungan masyarakat dengan memberikan detail serta proposal kegiatan.
                                 </div>
                             </div>
                         </div>
@@ -486,7 +503,9 @@
                             </h2>
                             <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                                 <div class="accordion-body">
-                                    Untuk mengajukan media partner diwajibkan melakukan follow instagram @bemilkomunej sebanyak 10 akun, lalu screenshot bukti tersebut dan kirimkan pada departemen humas beserta konten yang akan diposting.
+                                    Untuk mengajukan media partner diwajibkan melakukan follow instagram @bemilkomunej
+                                    sebanyak 10 akun, lalu screenshot bukti tersebut dan kirimkan pada departemen humas
+                                    beserta konten yang akan diposting.
                                 </div>
                             </div>
                         </div>
@@ -499,7 +518,8 @@
                             </h2>
                             <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                                 <div class="accordion-body">
-                                    Serap aspirasi merupakan program kerja BPM yang bekerja sama dengan departemen ADKESMA BEM, silahkan menghubungi BPM untuk memberikan aspirasi kamu ya :)
+                                    Serap aspirasi merupakan program kerja BPM yang bekerja sama dengan departemen
+                                    ADKESMA BEM, silahkan menghubungi BPM untuk memberikan aspirasi kamu ya :)
                                 </div>
                             </div>
                         </div>
@@ -512,7 +532,8 @@
                             </h2>
                             <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                                 <div class="accordion-body">
-                                    Kirimkan pertanyaanmu melalui email bemilkom@cs.unej.ac.id atau whatsapp departemen hubungan masyarakat(HUMAS) kami akan segera merespon pada jam kerja.
+                                    Kirimkan pertanyaanmu melalui email bemilkom@cs.unej.ac.id atau whatsapp departemen
+                                    hubungan masyarakat(HUMAS) kami akan segera merespon pada jam kerja.
                                 </div>
                             </div>
                         </div>

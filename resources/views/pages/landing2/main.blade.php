@@ -6,8 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>BEM FASILKOM UNEJ</title>
-    <meta content="BEM merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer Universitas Jember"
-        name="description">
+    <meta content="BEM merupakan lembaga eksekutif tertinggi di Fakultas Ilmu Komputer Universitas Jember" name="description">
 
     <meta content="Website Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember" name="keywords">
 
@@ -17,9 +16,7 @@
     <link href={{asset("landing2/assets/img/icon/apple-touch-icon.png")}} rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href={{asset("landing2/assets/vendor/aos/aos.css")}} rel="stylesheet">
@@ -133,12 +130,9 @@
                         <p>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
                         <div class="social-links mt-3">
                             <a href="https://t.me/bemilkomunej" class="telegram"><i class="bi bi-telegram"></i></a>
-                            <a href="https://web.facebook.com/bemilkomunej/" class="facebook"><i
-                                    class="bi bi-facebook"></i></a>
-                            <a href="https://instagram.com/bemilkomunej" class="instagram"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/bemilkom/" class="linkedin"><i
-                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://web.facebook.com/bemilkomunej/" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com/bemilkomunej" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/bemilkom/" class="linkedin"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
 
@@ -173,7 +167,7 @@
             <div class="copyright">
                 &copy; Copyright <strong><span>
                         <script>
-                        document.write(/\d{4}/.exec(Date())[0])
+                            document.write(/\d{4}/.exec(Date())[0])
                         </script>
                     </span></strong>. All Rights Reserved
             </div>
@@ -187,8 +181,7 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src={{asset("landing2/assets/vendor/purecounter/purecounter.js")}}></script>
