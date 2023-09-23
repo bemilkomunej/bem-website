@@ -88,7 +88,7 @@
 
             <header class="section-header">
                 <h2>ANGGOTA</h2>
-                <p>Daftar Anggota Perekonomian</p>
+                <p>Daftar Anggota Adkesma</p>
             </header>
 
             <div class="row gy-4">
