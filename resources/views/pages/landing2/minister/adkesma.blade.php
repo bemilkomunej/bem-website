@@ -97,7 +97,7 @@
                     data-toggle="tooltip" title="{{ $member->name }}">
                     <div class="member">
                         <div class="member-img">
-                            <img src={{asset("storage/app/public/img/member/" . $member->thumbnail)}} class="img-fluid"
+                            <img src={"storage/app/public/img/member/" . $member->thumbnail} class="img-fluid"
                                 alt="{{ $member->name }}">
                             {{-- <div class="social">
                                 <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
