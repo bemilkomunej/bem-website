@@ -228,7 +228,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <img src="https://dinkesp2kb.probolinggokota.go.id/wp-content/uploads/2020/01/1800x1200_coronavirus_1.jpg" class="img-fluid" alt="">
+                        <img src="https://d22gwcrfo2de51.cloudfront.net/wp-content/uploads/2020/06/new-visualisation-of-the-covid-19-virus-stockpack-unsplash-scaled.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>Info Covid</h4>
                             <p>https://unej.ac.id/poscovid19/</p>
