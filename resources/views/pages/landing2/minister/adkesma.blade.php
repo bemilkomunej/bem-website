@@ -88,7 +88,7 @@
 
             <header class="section-header">
                 <h2>ANGGOTA</h2>
-                <p>Daftar Anggota Perekonomian</p>
+                <p>Daftar Anggota Adkesma</p>
             </header>
 
             <div class="row gy-4">
@@ -97,7 +97,7 @@
                     data-toggle="tooltip" title="{{ $member->name }}">
                     <div class="member">
                         <div class="member-img">
-                            <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid"
+                            <img src={{asset("landing2/assets/img/member/" . $member->thumbnail)}} class="img-fluid"
                                 alt="{{ $member->name }}">
                             {{-- <div class="social">
                                 <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>

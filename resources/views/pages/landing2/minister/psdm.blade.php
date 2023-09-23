@@ -111,7 +111,7 @@
                 <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-toggle="tooltip" title="{{ $member->name }}">
                     <div class="member">
                         <div class="member-img">
-                            <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid" alt="{{ $member->name }}">
+                            <img src={{asset("landing2/assets/img/member/" . $member->thumbnail)}} class="img-fluid" alt="{{ $member->name }}">
                             {{-- <div class="social">
                                 <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
                                 <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
