@@ -63,7 +63,7 @@
 
     <!-- Banner Section -->
     <section class="banner">
-        <img src={{ asset("landing2/assets/img/cover%20kabinet.png")}} alt="">
+        <img src={{ asset("landing2/assets/img/cover-kabinet-sandyakala.png")}} alt="">
     </section>
     <!-- End Banner Section -->
 
