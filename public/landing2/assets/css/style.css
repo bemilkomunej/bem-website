@@ -10,8 +10,8 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
-  --primary-color: #6DC8BE;
-  --secondary-color: #3995D2;
+  --primary-color: #FCCE95;
+  --secondary-color: #FE579C;
   /* --primary-color: #4s154f1;
   --secondary-color: #0s12970; */
 }
@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-  color: #717ff5;
+  color: #FF4692;
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  
+
   padding: 15px 0;
   background: var(--secondary-color);
   min-height: 40px;
@@ -142,7 +142,7 @@ section {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #6776f4;
+  background: #FF4692;
   color: #fff;
 }
 .back-to-top.active {
@@ -198,7 +198,7 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -308,7 +308,7 @@ color: #fff;
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: var(--secondary-color);
@@ -1883,7 +1883,7 @@ color: #fff;
 }
 .blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
-  
+
 }
 .blog .sidebar .recent-posts .post-item.clearfix {
   height: 80px;
@@ -1894,7 +1894,7 @@ color: #fff;
   /* height: 80px; */
   /* min-height: 120px; */
   /* max-height: auto; */
-  
+
   float: left;
   margin: 3px;
   padding: 3px;
@@ -2177,7 +2177,7 @@ div.entry-content p img.note-float-center:parent {
   /* background-color: rgb(72 83 114 / 10%); */
   background-image: linear-gradient(#59c1b8, var(--secondary-color));
   padding: 0;
-  
+
 }
 
 .content_visi_kabinet_title ul, .content_misi_kabinet_title ul{
