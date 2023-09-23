@@ -6,10 +6,13 @@
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <h1 data-aos="fade-up">Divisi Adkesma</h1>
-                <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Mencari, mengkaji dan menindaklanjuti persoalan-persoalan yang ada di dalam lingkungan Fakultas Ilmu Komputer Universitas Jember dengan data-data yang di dapat dari dalam maupun luar Fakultas Ilmu Komputer Universitas Jember.</h4>
+                <h4 class="text-white" data-aos="fade-up" data-aos-delay="400">Mencari, mengkaji dan menindaklanjuti
+                    persoalan-persoalan yang ada di dalam lingkungan Fakultas Ilmu Komputer Universitas Jember dengan
+                    data-data yang di dapat dari dalam maupun luar Fakultas Ilmu Komputer Universitas Jember.</h4>
                 <div data-aos="fade-up" data-aos-delay="600">
                     <div class="text-center text-lg-start">
-                        <a href="#services" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                        <a href="#services"
+                            class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                             <span>Detail</span>
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -40,8 +43,12 @@
                     <div class="service-box blue">
                         <i class="ri-discuss-line icon"></i>
                         <h3>Rasio</h3>
-                        <p>Diselenggarakannya kegiatan tersebut untuk menyatukan dan memberikan informasi yang tepat terkait format surat menyurat, format proposal kegiatan dan lain sebagainya. Kegiatan tersebut juga sebagai upaya untuk memperlancar proses persiapan maupun proses perizinan kegiatan.</p>
-                        <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
+                        <p>Diselenggarakannya kegiatan tersebut untuk menyatukan dan memberikan informasi yang tepat
+                            terkait format surat menyurat, format proposal kegiatan dan lain sebagainya. Kegiatan
+                            tersebut juga sebagai upaya untuk memperlancar proses persiapan maupun proses perizinan
+                            kegiatan.</p>
+                        <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
+                                class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -49,8 +56,11 @@
                     <div class="service-box orange">
                         <i class="ri-discuss-line icon"></i>
                         <h3>Mubes</h3>
-                        <p>forum musyawarah untuk membahas pedoman kerja AD/ART, GBHO dan GBHK BEM Fakultas Ilmu Komputer kepada seluruh perwakilan angkatan, perwakilan organisasi lain yang bertanggung jawab kepada BEM Fakultas Ilmu Komputer</p>
-                        <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
+                        <p>forum musyawarah untuk membahas pedoman kerja AD/ART, GBHO dan GBHK BEM Fakultas Ilmu
+                            Komputer kepada seluruh perwakilan angkatan, perwakilan organisasi lain yang bertanggung
+                            jawab kepada BEM Fakultas Ilmu Komputer</p>
+                        <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
+                                class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -58,8 +68,10 @@
                     <div class="service-box green">
                         <i class="ri-discuss-line icon"></i>
                         <h3>Sosialisasi IKM</h3>
-                        <p>Memberikan informasi yang tepat mengenai isi undang-undang dasar Ikatan Keluarga Mahasiswa kepada seluruh mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
-                        <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
+                        <p>Memberikan informasi yang tepat mengenai isi undang-undang dasar Ikatan Keluarga Mahasiswa
+                            kepada seluruh mahasiswa Fakultas Ilmu Komputer Universitas Jember.</p>
+                        <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
+                                class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -81,24 +93,26 @@
 
             <div class="row gy-4">
                 @foreach( $members as $member)
-                <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-toggle="tooltip" title="{{ $member->name }}">
+                <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
+                    data-toggle="tooltip" title="{{ $member->name }}">
                     <div class="member">
                         <div class="member-img">
-                            <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid" alt="{{ $member->name }}">
-                           {{-- <div class="social">
+                            <img src={{asset("storage/img/member/" . $member->thumbnail)}} class="img-fluid"
+                                alt="{{ $member->name }}">
+                            {{-- <div class="social">
                                 <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
-                                <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-                            </div> --}}
-                        </div>
-                        <div class="member-info">
-                            <h4 class="text-truncate">{{ $member->name }}</h4>
-                            <span>{{ $member->position . ' ' . $member->division }}</span>
-                        </div>
+                            <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
+                        </div> --}}
+                    </div>
+                    <div class="member-info">
+                        <h4 class="text-truncate">{{ $member->name }}</h4>
+                        <span>{{ $member->position . ' ' . $member->division }}</span>
                     </div>
                 </div>
-                @endforeach
-
             </div>
+            @endforeach
+
+        </div>
 
         </div>
 
