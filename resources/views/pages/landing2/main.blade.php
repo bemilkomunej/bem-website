@@ -48,7 +48,7 @@
 
             <a href="/" class="logo d-flex align-items-center">
                 <img src={{ asset('landing2/assets/img/icon/apple-icon.png') }} alt="Logo Bem">
-                <span>BEM FASILKOM UNEJ</span>
+                <span>BEM FASILKOM</span>
             </a>
 
             <nav id="navbar" class="navbar">
