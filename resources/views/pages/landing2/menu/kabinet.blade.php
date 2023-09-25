@@ -61,8 +61,9 @@
                                     <div class="feature-box">
                                         <h4>Bentuk Angka 8</h4>
                                         <hr>
-                                        <p>Bentuk logo yang menyerupai angka 8 melambangkan BEM FASILKOM sekarang telah
-                                            memasuki periode ke-8.</p>
+                                        <p>Bentuk siluet huruf 'S' dan angka 8 merujuk pada nama kabinet yaitu Sandyakala
+                                            yang merupakan kabinet ke-8. Terdapat logo BEM yang diikuti 6 titik yang
+                                            memiliki arti jumlah divisi di BEM FASILOKM UNEJ.</p>
                                     </div>
                                 </div>
 
@@ -93,7 +94,7 @@
                                         <h4>Warna Cream & Magenta</h4>
                                         <hr>
                                         <p>Dalam keseluruhan filosofi warna cream & magenta dapat dipahami sebagai
-                                            representasi organisasi yabg kreatif, inovatif, berani, dan penuh semangat.</p>
+                                            representasi organisasi yang kreatif, inovatif, dan penuh semangat.</p>
                                     </div>
                                 </div>
 
