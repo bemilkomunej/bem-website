@@ -139,9 +139,9 @@
                     </div>
                     <div class="col-md-12 col-lg-8">
                         <div class="content_visi_kabinet_description border-bottom border-secondary">
-                            <p class="fw-bold text-white">Mewujudkan BEM Fasilkom UNEJ yang inklusif dan adaptif serta
-                                membentuk BEM Fasulkom UNEJ yang sinergis dengan semua elemen yang ada untuk menciptakan
-                                Fakultas Ilmu Komputer yang berprestasi,</p>
+                            <p class="fw-bold text-white">Menjadikan BEM FASILKOM UNEJ sebagai organisasi yang kompeten,
+                                berintegritas, intreaktif, dan adaptif selaras terhadap seluruh elemen yang ada di Fakultas
+                                Ilmu Komputer untuk meciptakan Fakultas Ilmu Komputer yang lebih sinergis.</p>
                         </div>
                     </div>
                 </div>
@@ -168,23 +168,19 @@
                     <div class="col-md-12 col-lg-8">
                         <ol class="fw-bold text-white">
                             <li>
-                                <p>Menciptakan internal BEM Fasilkom UNEJ yang berasaskan kekeluargaan; </p>
+                                <p>Membangun internal BEM FASILKOM UNEJ yang berdasarkan kekeluargaan dan IMTAQ; </p>
                             </li>
                             <li>
-                                <p>Menjalin hubungan harmonis dengan seluruh Ormawa, UKM, Mahasiswa, dan civitas akademika
-                                    Fakultas Ilmu Komputer Universitas Jember; </p>
+                                <p>Menjalin hubungan baik dengan seluruh warga Fakultas Ilmu Komputer Universitas Jember; </p>
                             </li>
                             <li>
-                                <p>Menjadikan BEM Fasilkom Unej sebagai mediator antar elemen Fasilkom dalam berkomunikasi
-                                    dan berdiskusi; </p>
+                                <p>Meningkatkan potensi mahasiswa Fakultas Ilmu Komputer Universitas Jember dalam bidang akademik dan non akademik; </p>
                             </li>
                             <li>
-                                <p> Memastikan kinerja BEM Fasilkom Unej untuk memberikan pelayanan yang berkualitas kepada
-                                    seluruh elemen Fakultas Ilmu Komputer Universitas Jember;</p>
+                                <p>menyelaraskan mahasiswa Fakultas Ilmu Komputer Universitas Jember dengan civitas akademik, dan</p>
                             </li>
                             <li>
-                                <p>Meningkatkan kinerja BEM Fasilkom Unej secara berkesinambungan dalam menjalankan fungsi
-                                    dan tanggungjawab Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer</p>
+                                <p>Meningkatkan profesionalismen dalam menjalankan fungsi dan tanggung jawab BEM FASILKOM UNEJ</p>
                             </li>
                         </ol>
                     </div>
