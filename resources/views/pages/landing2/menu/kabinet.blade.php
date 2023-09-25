@@ -61,9 +61,8 @@
                                     <div class="feature-box">
                                         <h4>Bentuk Angka 8</h4>
                                         <hr>
-                                        <p>Bentuk siluet huruf 'S' dan angka 8 merujuk pada nama kabinet yaitu Sandyakala
-                                            yang merupakan kabinet ke-8. Terdapat logo BEM yang diikuti 6 titik yang
-                                            memiliki arti jumlah divisi di BEM FASILOKM UNEJ.</p>
+                                        <p>Bentuk logo yang menyerupai angka 8 melambangkan BEM FASILKOM sekarang telah
+                                            memasuki periode ke-8.</p>
                                     </div>
                                 </div>
 
@@ -81,10 +80,11 @@
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="400">
                                     <div class="feature-box">
                                         <!-- <i class="ri-command-line"></i> -->
-                                        <h4>Jam Pasir</h4>
+                                        <h4>Huruf S</h4>
                                         <hr>
-                                        <p>Sandyakala digambarkan dengan jam pasir/jabat tangan yang membentuk seperti angka
-                                            8.</p>
+                                        <p>Bentuk siluet huruf 'S' dan angka 8 merujuk pada nama kabinet yaitu Sandyakala
+                                            yang merupakan kabinet ke-8. Terdapat logo BEM yang diikuti 6 titik yang
+                                            memiliki arti jumlah divisi di BEM FASILOKM UNEJ.</p>
                                     </div>
                                 </div>
 
