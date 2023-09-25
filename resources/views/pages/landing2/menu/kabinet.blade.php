@@ -103,7 +103,7 @@
 
   <!-- Banner Section -->
     <section class="banner">
-      <img src={{ asset("landing2/assets/img/cover_visi_misi.png")}} alt="banner visi misi">
+      <img src={{ asset("landing2/assets/img/sandyakala/visi-misi-2023.png")}} alt="banner visi misi">
     </section>
   <!-- End Banner Section -->
 
