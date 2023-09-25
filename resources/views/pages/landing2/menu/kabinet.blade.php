@@ -171,16 +171,20 @@
                                 <p>Membangun internal BEM FASILKOM UNEJ yang berdasarkan kekeluargaan dan IMTAQ; </p>
                             </li>
                             <li>
-                                <p>Menjalin hubungan baik dengan seluruh warga Fakultas Ilmu Komputer Universitas Jember; </p>
+                                <p>Menjalin hubungan baik dengan seluruh warga Fakultas Ilmu Komputer Universitas Jember;
+                                </p>
                             </li>
                             <li>
-                                <p>Meningkatkan potensi mahasiswa Fakultas Ilmu Komputer Universitas Jember dalam bidang akademik dan non akademik; </p>
+                                <p>Meningkatkan potensi mahasiswa Fakultas Ilmu Komputer Universitas Jember dalam bidang
+                                    akademik dan non akademik; </p>
                             </li>
                             <li>
-                                <p>menyelaraskan mahasiswa Fakultas Ilmu Komputer Universitas Jember dengan civitas akademik, dan</p>
+                                <p>menyelaraskan mahasiswa Fakultas Ilmu Komputer Universitas Jember dengan civitas
+                                    akademik, dan</p>
                             </li>
                             <li>
-                                <p>Meningkatkan profesionalismen dalam menjalankan fungsi dan tanggung jawab BEM FASILKOM UNEJ;</p>
+                                <p>Meningkatkan profesionalismen dalam menjalankan fungsi dan tanggung jawab BEM FASILKOM
+                                    UNEJ;</p>
                             </li>
                         </ol>
                     </div>
@@ -203,7 +207,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/team/Team-PSDM.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/sandyakala/cover-psdm.png') }} class="img-fluid"
                                 alt="PSDM Squad">
                             <h3>Divisi PSDM</h3>
                             <p>Divisi Pengembangan Sumber Daya Mahasiswa berorientasi pada potensi manajerial dan
