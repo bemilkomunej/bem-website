@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h1 data-aos="fade-up">Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas Jember</h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400">#Hanya Testing</h2>
+                    <h2 data-aos="fade-up" data-aos-delay="400">#BerdedikasiTinggiMembakarAmbisi</h2>
                     <div data-aos="fade-up" data-aos-delay="600">
                         <div class="text-center text-lg-start">
                             <a href="#about"
