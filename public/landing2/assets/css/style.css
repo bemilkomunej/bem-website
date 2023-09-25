@@ -131,7 +131,7 @@ section {
 .breadcrumbs ol li+li::before {
     display: inline-block;
     padding-right: 10px;
-    color: #8894f6;
+    color: #fb86b7;
     content: "/";
 }
 
@@ -250,7 +250,7 @@ header.header-scrolled.landing .logo span {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #013289;
+    color: #e9307d;
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -262,7 +262,7 @@ header.header-scrolled.landing .logo span {
 
 .header.landing .navbar .dropdown ul a,
 .navbar a:focus {
-    color: #013289;
+    color: #e9307d;
 }
 
 .navbar a i,
@@ -291,7 +291,7 @@ header.header-scrolled.landing .logo span {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #5969f3;
+    background: #ff64a5;
 }
 
 .navbar .dropdown ul {
@@ -393,7 +393,7 @@ header.header-scrolled.landing .logo span {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(1, 22, 61, 0.9);
+    background: rgba(61, 1, 60, 0.9);
     transition: 0.3s;
 }
 
@@ -531,7 +531,7 @@ header.header-scrolled.landing .logo span {
     transition: 0.5s;
     color: #fff;
     background: var(--primary-color);
-    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    box-shadow: 0px 5px 30px rgba(246, 236, 94, 0.4);
 }
 
 .hero .btn-get-started span {
