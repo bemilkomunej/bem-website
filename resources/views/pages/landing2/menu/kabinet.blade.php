@@ -180,7 +180,7 @@
                                 <p>menyelaraskan mahasiswa Fakultas Ilmu Komputer Universitas Jember dengan civitas akademik, dan</p>
                             </li>
                             <li>
-                                <p>Meningkatkan profesionalismen dalam menjalankan fungsi dan tanggung jawab BEM FASILKOM UNEJ</p>
+                                <p>Meningkatkan profesionalismen dalam menjalankan fungsi dan tanggung jawab BEM FASILKOM UNEJ;</p>
                             </li>
                         </ol>
                     </div>
@@ -196,7 +196,7 @@
 
                 <header class="section-header">
                     <h2>Divisi</h2>
-                    <p>Divisi Bem Fasilkom Unej</p>
+                    <p>DIVISI BEM FASILKOM UNEJ</p>
                 </header>
 
                 <div class="row">
