@@ -66,7 +66,7 @@
       </div>
       <div class="col-xl-4 text-center align-self-center" data-aos="fade-right" data-aos-delay="100">
         <div class="card">
-        <img src={{asset('landing2/assets/img/logo-kabinet.png')}} class="img-fluid p-4" alt="Logo Kabine">
+        <img src={{asset('landing2/assets/img/sandyakala/logos-bem.png')}} class="img-fluid p-4" alt="Logo Kabine">
         </div>
       </div>
 
