@@ -211,13 +211,13 @@
                                 alt="PSDM Squad">
                             <h3>Divisi PSDM</h3>
                             <p>Divisi Pengembangan Sumber Daya Mahasiswa berorientasi pada potensi manajerial dan
-                                mengembangkan kemampuan dalam bidang organisasi individu maupun berkelompok;</p>
+                                mengembangkan kemampuan dalam bidang organisasi individu maupun berkelompok.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/team/Team-Kominfo.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/sandyakala/cover-kominfo.png') }} class="img-fluid"
                                 alt="Kominfo Squad">
                             <h3>Divisi KOMINFO</h3>
                             <p>Divisi Komunikasi dan Informasi yang berorientasi pada komunikasi, mengelola informasi di
@@ -244,7 +244,7 @@
                             <p>Divisi Luar Dalam yang berorientasi pada memperkenalkan Fasilkom,
                                 dan menjalin koordinasi, konsolidasi, dan monitoring juga hubungan baik dengan
                                 lembaga mahasiswa Fakultas Ilmu Komputer Universitas Jember termasuk pengurus
-                                BEM Fasilkom UNEJ;</p>
+                                BEM Fasilkom UNEJ.</p>
                         </div>
                     </div>
 
@@ -255,7 +255,7 @@
                             <h3>Divisi RumahTangga</h3>
                             <p>Divisi Minat Bakat (Rumah Tangga) yang berorientasi pada
                                 penjaringan dan peningkatan mahasiswa dibidang akademik dan non-akademik baik
-                                individu maupun kelompok serta koordinasi dengan Unit Kegiatan Mahasiswa</p>
+                                individu maupun kelompok serta koordinasi dengan Unit Kegiatan Mahasiswa.</p>
                         </div>
                     </div>
 
@@ -265,7 +265,7 @@
                                 alt="Perekonomian Squad">
                             <h3>Divisi Perekonomian</h3>
                             <p>Divisi Perekonomian yang berorientasi pada kesejahteraan BEM Fasilkom UNEJ melalui kegiatan
-                                untuk menambah pemasukan dalam bentuk apapun</p>
+                                untuk menambah pemasukan dalam bentuk apa pun.</p>
                         </div>
                     </div>
 
