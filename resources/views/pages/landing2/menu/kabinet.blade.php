@@ -49,7 +49,7 @@
                                     <div class="feature-box">
                                         <h4>Sandyakala</h4>
                                         <hr>
-                                        <p>Sandyakala mengandung arti 'pertemuan waktu', yakni memiliki makna perpaduan
+                                        <p>Sandyakala mengandung arti 'pertemuan waktu', yakni perpaduan
                                             kekuatan besar antara UKM, ORMAWA, dan komunitas di FASILKOM, sehingga BEM bisa
                                             menjadi wadah kesatuan bagi UKM ORMAWA FASILKOM sebagai landasan berpikir untuk
                                             melangkah bersinergi mencapai tujuan. </p>
