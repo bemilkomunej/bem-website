@@ -228,7 +228,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/team/Team-ADKESMA.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/sandyakala/cover-adkesma.png') }} class="img-fluid"
                                 alt="Adkesma Squad">
                             <h3>Divisi ADKESMA</h3>
                             <p>Divisi Advokasi dan Kesatuan Mahasiswa yang berorientasi pada persatuan
