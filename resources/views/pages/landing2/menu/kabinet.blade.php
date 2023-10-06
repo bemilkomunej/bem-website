@@ -250,7 +250,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/team/Team-RumahTangga.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/sandyakala/cover-rt.png') }} class="img-fluid"
                                 alt="Rumah Tangga Squad">
                             <h3>Divisi RumahTangga</h3>
                             <p>Divisi Minat Bakat (Rumah Tangga) yang berorientasi pada
@@ -261,7 +261,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/team/Team-Perekonomian.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/sandyakala/cover-perekonomian.png') }} class="img-fluid"
                                 alt="Perekonomian Squad">
                             <h3>Divisi Perekonomian</h3>
                             <p>Divisi Perekonomian yang berorientasi pada kesejahteraan BEM Fasilkom UNEJ melalui kegiatan
