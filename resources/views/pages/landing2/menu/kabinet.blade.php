@@ -282,7 +282,7 @@
 
                 <header class="section-header">
                     <h2>STRUKTUR</h2>
-                    <p>Kabinet Catra Sahitya</p>
+                    <p>KABINET SANDYAKALA</p>
                 </header>
 
                 <div class="row gy-4">
@@ -296,7 +296,7 @@
                                     {{-- <div class="social">
                 <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
                 <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-              </div> --}}
+                </div> --}}
                                 </div>
                                 <div class="member-info">
                                     <h4 class="text-truncate">{{ $member->name }}</h4>
