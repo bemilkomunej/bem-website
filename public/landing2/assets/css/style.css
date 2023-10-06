@@ -500,7 +500,7 @@ header.header-scrolled.landing .logo span {
     bottom: 0;
     z-index: -1;
     position: absolute;
-    background: #000529;
+    background: #29001f;
     /* background: -moz-linear-gradient(left,#000529 1%,#002055 24%,#005db5 67%,var(--primary-color) 100%);
   background: -webkit-linear-gradient(left,#000529 1%,#002055 24%,#005db5 67%,var(--primary-color) 100%);
   background: linear-gradient(to right,#000529 1%,#002055 24%,#005db5 67%,var(--primary-color) 100%); */
@@ -631,7 +631,7 @@ header.header-scrolled.landing .logo span {
     transition: 0.5s;
     color: #fff;
     background: var(--primary-color);
-    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+    box-shadow: 0px 5px 30px rgba(246, 236, 94, 0.4);
 }
 
 .about .btn-read-more span {
