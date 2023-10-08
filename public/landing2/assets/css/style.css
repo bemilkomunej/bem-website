@@ -73,7 +73,7 @@ section {
     color: var(--secondary-color);
 }
 
-.section-header span{
+.text-success{
     color: var(--primary-color);
 }
 
