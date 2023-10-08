@@ -60,6 +60,7 @@
                         <ul>
                             <li><a href="{{ route('profil') }}">Profil</a></li>
                             <li><a href="{{ route('kabinet') }}">Kabinet</a></li>
+                            <li><a href="{{ route('home') }}">BPH</a></li>
                             <li class="dropdown"><a href="#"><span>Divisi</span> <i
                                         class="bi bi-chevron-right"></i></a>
                                 <ul>
