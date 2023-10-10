@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                        <img src={{ asset('landing2/assets/img/about-bem.jpg') }} class="img-fluid" alt="">
+                        <img src={{ asset('landing2/assets/img/about-bem.JPG') }} class="img-fluid" alt="">
                     </div>
 
                 </div>

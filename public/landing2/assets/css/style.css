@@ -73,6 +73,10 @@ section {
     color: var(--secondary-color);
 }
 
+.text-success{
+    color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
     .section-header p {
         font-size: 28px;
