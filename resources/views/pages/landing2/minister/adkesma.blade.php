@@ -45,7 +45,7 @@
                             <i class="ri-discuss-line icon"></i>
                             <h3>Rasio</h3>
                             <p>Diselenggarakannya kegiatan tersebut untuk menyatukan dan memberikan informasi yang tepat
-                                terkait format surat menyurat, format proposal kegiatan dan lain sebagainya. Kegiatan
+                                terkait format surat-menyurat, format proposal kegiatan dan lain sebagainya. Kegiatan
                                 tersebut juga sebagai upaya untuk memperlancar proses persiapan maupun proses perizinan
                                 kegiatan.</p>
                             <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
