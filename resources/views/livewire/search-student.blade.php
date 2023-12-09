@@ -15,11 +15,10 @@
             </div>
         </div>
 
-
         <div class="row gy-4 justify-content-center">
             @foreach($students as $c)
             <div class="col-lg-2 col-md-3 col-sm-6 d-flex align-items-stretch" data-toggle="tooltip" title="{{ $c->name }}">
-                
+
                     <div class="member">
                     <a href="/ppmb/{{ $c->nim }}">
                         <div class="member-img">
@@ -35,7 +34,7 @@
                         </div>
                         </a>
                     </div>
-                
+
             </div>
             @endforeach
             <!-- {{$students->links()}} -->

@@ -78,7 +78,7 @@
                     <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="https://uc3.unej.ac.id/">Pengaduan</a></li>
-                            <li><a href="https://ilkom.unej.ac.id/pusat-informasi-dan-layanan/">Administrasi</a></li>
+                            <li><a href="https://ilkom.unej.ac.id/download/">Akademik</a></li>
                             <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                 <li><a href="#">Deep Drop Down 1</a></li>
@@ -88,11 +88,11 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> -->
-                            <li><a href="https://linktr.ee/oprecbemilkom2k21">Open Recruitment</a></li>
-                            <li><a href="https://drive.google.com/file/d/1jhX0bsRf5wRjFzqlG03ZYN_LvAkdDRIR/view">SOP
+                            <li><a href="https://linktr.ee/OPRECBEMFASILKOM2023">Open Recruitment</a></li>
+                            {{-- <li><a href="https://drive.google.com/file/d/1jhX0bsRf5wRjFzqlG03ZYN_LvAkdDRIR/view">SOP
                                     Kerja Sama</a></li>
                             <li><a href="https://drive.google.com/file/d/1M0Y3SvxucQDrw8Vk-ZAMfIsvFEXEQLlM/view">SOP
-                                    Kunjungan</a></li>
+                                    Kunjungan</a></li> --}}
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="{{ route('ppmb') }}">PPMB</a></li>
