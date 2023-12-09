@@ -213,12 +213,11 @@
                     <div class="col-lg-6">
                         <!-- <iframe src="https://drive.google.com/file/d/1qhJKxj3hulmc6Xgewkh37WXylkdvUcU0/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" style="border-radius: 20px; width: 100%; height:100%;"></iframe> -->
                         <!-- widt 560 x 314 -->
-                        <iframe class="speakerdeck-iframe" frameborder="0" {{-- src="https://speakerdeck.com/player/326090e1c47343d9b38f22fb736d9624" --}}
+                        <iframe class="speakerdeck-iframe" frameborder="0"
                             src="https://speakerdeck.com/player/7d9fcf92364a4ccaa089eb232bfba320"
-                            title="Profil BEM FASILKOM UNEJ 2023" allowfullscreen="true" mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
-                            style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 100%; min-height: 314px"
-                            data-ratio="1.78343949044586"></iframe>
+                            title="Profile BEM FASILKOM UNEJ 2023" allowfullscreen="true"
+                            style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;"
+                            data-ratio="1.7777777777777777"></iframe>
                     </div>
 
                 </div><!-- End Feature Tabs -->
