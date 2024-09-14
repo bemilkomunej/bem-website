@@ -197,7 +197,7 @@ https://templatemo.com/tm-561-purple-buzz
                         <p class="text-lg-end text-center text-light light-300">
                             Designed by <a rel="sponsored" class="text-decoration-none text-light"
                                 href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
-                            {{--                            Developed by <a rel="sponsored" class="text-decoration-none text-light" href="https://github.com/sibeux" target="_blank"><strong>sibeux</strong></a>--}}
+                            {{--                            Developed by <a rel="sponsored" class="text-decoration-none text-light" href="https://github.com/sibeux" target="_blank"><strong>sibeux x itsmallix</strong></a>--}}
                         </p>
                     </div>
                 </div>

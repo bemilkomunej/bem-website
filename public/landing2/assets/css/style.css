@@ -10,8 +10,8 @@
 --------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
-    --primary-color: #FCCE95;
-    --secondary-color: #FE579C;
+    --primary-color: #680F96;
+    --secondary-color: #616161;
     /* --primary-color: #4s154f1;
   --secondary-color: #0s12970; */
 }
@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-    color: #FF4692;
+    color: #680F96;
     text-decoration: none;
 }
 
@@ -135,7 +135,7 @@ section {
 .breadcrumbs ol li+li::before {
     display: inline-block;
     padding-right: 10px;
-    color: #fb86b7;
+    color: #616161;
     content: "/";
 }
 
@@ -163,7 +163,7 @@ section {
 }
 
 .back-to-top:hover {
-    background: #FF4692;
+    background: #680F96;
     color: #fff;
 }
 
@@ -254,7 +254,7 @@ header.header-scrolled.landing .logo span {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #e9307d;
+    color: #680F96;
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -535,7 +535,7 @@ header.header-scrolled.landing .logo span {
     transition: 0.5s;
     color: #fff;
     background: var(--primary-color);
-    box-shadow: 0px 5px 30px rgba(246, 236, 94, 0.4);
+    box-shadow: 0px 5px 30px rgba(195, 94, 246, 0.4);
 }
 
 .hero .btn-get-started span {
@@ -635,7 +635,7 @@ header.header-scrolled.landing .logo span {
     transition: 0.5s;
     color: #fff;
     background: var(--primary-color);
-    box-shadow: 0px 5px 30px rgba(246, 236, 94, 0.4);
+    box-shadow: 0px 5px 30px rgba(195, 94, 246, 0.4);
 }
 
 .about .btn-read-more span {
