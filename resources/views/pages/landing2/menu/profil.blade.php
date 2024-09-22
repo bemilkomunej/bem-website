@@ -122,6 +122,9 @@
                             <li>
                                 <a class="nav-link" data-bs-toggle="pill" href="#tab7">2023</a>
                             </li>
+                            <li>
+                                <a class="nav-link" data-bs-toggle="pill" href="#tab7">2024</a>
+                            </li>
                         </ul><!-- End Tabs -->
 
                         <!-- Tab Content -->

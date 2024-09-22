@@ -66,7 +66,7 @@
 
         <!-- Banner Section -->
         <section class="banner">
-            <img src={{ asset('landing2/assets/img/cover-kabinet-navaratna.png') }} alt="">
+            <img src={{ asset('landing2/assets/img/cover-kabinet-navaratnagi.png') }} alt="">
         </section>
         <!-- End Banner Section -->
 
@@ -427,7 +427,7 @@
         <!-- End Clients Section -->
 
         <!-- ======= Recent Blog Posts Section ======= -->
-        <section id="recent-blog-posts" class="recent-blog-posts">
+        <!-- <section id="recent-blog-posts" class="recent-blog-posts">
 
             <div class="container" data-aos="fade-up">
 
@@ -440,7 +440,6 @@
                     @foreach ($blogs as $blog)
                         <div class="col-lg-4">
                             <div class="post-box">
-                                <!-- <div class="post-img"><img src={{ $blog->thumbnail != null ? asset('storage/img/blog/' . $blog->thumbnail) : asset('landing2/assets/img/blog/blog-1.jpg') }} class="img-fluid" alt=""></div> -->
                                 <span class="post-date">{{ $blog->created_at->format('D, M d') }}</span>
                                 <h3 class="post-title">{{ $blog->title }}</h3>
                                 <p style="text-align: justify;">{{ Str::limit(strip_tags($blog->contents), 100) }}</p>
@@ -454,7 +453,7 @@
 
             </div>
 
-        </section><!-- End Recent Blog Posts Section -->
+        </section>End Recent Blog Posts Section -->
 
         <!-- ======= F.A.Q Section ======= -->
         <section id="faq" class="faq">
@@ -463,7 +462,7 @@
 
                 <header class="section-header">
                     <h2>F.A.Q</h2>
-                    <p>Frequently Asked Questions</p>
+                    <p>Pertanyaan Umum</p>
                 </header>
 
                 <div class="row">

@@ -47,22 +47,18 @@
                                 <div class="col-md-12 icon-box" data-aos="fade-up">
                                     <!-- <i class="ri-line-chart-line"></i> -->
                                     <div class="feature-box">
-                                        <h4>Sandyakala</h4>
+                                        <h4>Navaratna</h4>
                                         <hr>
-                                        <p>Sandyakala mengandung arti 'pertemuan waktu', yakni perpaduan
-                                            kekuatan besar antara UKM, ORMAWA, dan komunitas di FASILKOM, sehingga BEM bisa
-                                            menjadi wadah kesatuan bagi UKM ORMAWA FASILKOM sebagai landasan berpikir untuk
-                                            melangkah bersinergi mencapai tujuan. </p>
+                                        <p>Merupakan perwujudan dari nama kabinet “Navaratna” yang mana Ratna berarti Permata bersinar sebagai simbol keberanian dan kekuasaan. Sebagai pemimpin yang memiliki keberanian untuk mengambil keputusan dan kekuatan untuk mengarahkan organisasi ke arah yang benar. </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="100">
                                     <!-- <i class="ri-stack-line"></i> -->
                                     <div class="feature-box">
-                                        <h4>Bentuk Angka 8</h4>
+                                        <h4>Bentuk Diamond</h4>
                                         <hr>
-                                        <p>Bentuk logo yang menyerupai angka 8 melambangkan BEM FASILKOM sekarang telah
-                                            memasuki periode ke-8.</p>
+                                        <p>Slicing diamond yang membentuk angka 9 yang melambangkan kabinet ke-9 Bem Fasilkom Unej dan juga nama “Nava” yang berarti 9 dan bentuk diamond Melambangkan permata Sesuai dengan nama kabinet “ratna” yang berarti permata</p>
                                     </div>
                                 </div>
 
@@ -70,7 +66,7 @@
                         </div>
                         <div class="col-xl-4 text-center align-self-center" data-aos="fade-right" data-aos-delay="100">
                             <div class="card">
-                                <img src={{ asset('landing2/assets/img/sandyakala/logos-bem.png') }} class="img-fluid p-4"
+                                <img src={{ asset('landing2/assets/img/navaratna/logos.png') }} class="img-fluid p-4"
                                     alt="Logo Kabine">
                             </div>
                         </div>
@@ -80,21 +76,18 @@
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="400">
                                     <div class="feature-box">
                                         <!-- <i class="ri-command-line"></i> -->
-                                        <h4>Huruf S</h4>
+                                        <h4>7 Susun Segitiga</h4>
                                         <hr>
-                                        <p>Bentuk siluet huruf 'S' dan angka 8 merujuk pada nama kabinet yaitu Sandyakala
-                                            yang merupakan kabinet ke-8. Terdapat logo BEM yang diikuti 6 titik yang
-                                            memiliki arti jumlah divisi di BEM FASILOKM UNEJ.</p>
+                                        <p>Susunan 7 Segitiga yang membentuk diamon melambangkan 6 divisi + BPH pada bem fasilkom yang bersatu untuk saling melengkapi setiap elemen bem Fasilkom</p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="500">
                                     <!-- <i class="ri-radar-line"></i> -->
                                     <div class="feature-box">
-                                        <h4>Warna Cream & Magenta</h4>
+                                        <h4>Warna Shinning Purple</h4>
                                         <hr>
-                                        <p>Dalam keseluruhan filosofi warna cream & magenta dapat dipahami sebagai
-                                            representasi organisasi yang kreatif, inovatif, dan penuh semangat.</p>
+                                        <p>Dalam keseluruhan filosofi ungu merupakan representasi organisasi yang kreatif, inovatif, bertransformasi dan penuh semangat.</p>
                                     </div>
                                 </div>
 
@@ -111,7 +104,7 @@
 
         <!-- Banner Section -->
         <section class="banner">
-            <img src={{ asset('landing2/assets/img/sandyakala/visi-misi-2023.png') }} alt="banner visi misi">
+            <img src={{ asset('landing2/assets/img/navaratna/visi-misi.png') }} alt="banner visi misi">
         </section>
         <!-- End Banner Section -->
 
@@ -139,7 +132,7 @@
                     </div>
                     <div class="col-md-12 col-lg-8">
                         <div class="content_visi_kabinet_description border-bottom border-secondary">
-                            <p class="fw-bold text-white">Menjadikan BEM FASILKOM UNEJ sebagai organisasi yang kompeten,
+                            <p class="fw-bold">Menjadikan BEM FASILKOM UNEJ sebagai organisasi yang kompeten,
                                 berintegritas, intreaktif, dan adaptif selaras terhadap seluruh elemen yang ada di Fakultas
                                 Ilmu Komputer untuk meciptakan Fakultas Ilmu Komputer yang lebih sinergis.</p>
                         </div>
@@ -166,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-8">
-                        <ol class="fw-bold text-white">
+                        <ol class="fw-bold">
                             <li>
                                 <p>Membangun internal BEM FASILKOM UNEJ yang berdasarkan kekeluargaan dan IMTAQ; </p>
                             </li>
@@ -282,7 +275,7 @@
 
                 <header class="section-header">
                     <h2>STRUKTUR</h2>
-                    <p>KABINET SANDYAKALA</p>
+                    <p>KABINET NAVARATNA</p>
                 </header>
 
                 <div class="row gy-4">

@@ -2559,7 +2559,7 @@ div.entry-content p img.note-float-center:parent {
 --------------------------------------------------------------*/
 #visi_misi {
     /* background-color: rgb(72 83 114 / 10%); */
-    background-image: linear-gradient(#ffebdc, var(--secondary-color));
+    background-image: linear-gradient(#e1e1e1, #FFFFFF);
     padding: 0;
 
 }
