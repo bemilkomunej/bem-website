@@ -200,7 +200,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-psdm.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverPsdm.png') }} class="img-fluid"
                                 alt="PSDM Squad">
                             <h3>Divisi PSDM</h3>
                             <p>Divisi Pengembangan Sumber Daya Mahasiswa berorientasi pada potensi manajerial dan
@@ -210,7 +210,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-kominfo.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverKominfo.png') }} class="img-fluid"
                                 alt="Kominfo Squad">
                             <h3>Divisi KOMINFO</h3>
                             <p>Divisi Komunikasi dan Informasi yang berorientasi pada komunikasi, mengelola informasi di
@@ -221,7 +221,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-adkesma.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverAdkesma.png') }} class="img-fluid"
                                 alt="Adkesma Squad">
                             <h3>Divisi ADKESMA</h3>
                             <p>Divisi Advokasi dan Kesatuan Mahasiswa yang berorientasi pada persatuan
@@ -231,7 +231,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-luardalam.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverLuarDalam.png') }} class="img-fluid"
                                 alt="Luar Dalam Squad">
                             <h3>Divisi LuarDalam</h3>
                             <p>Divisi Luar Dalam yang berorientasi pada memperkenalkan Fasilkom,
@@ -243,7 +243,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-rt.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverRt.png') }} class="img-fluid"
                                 alt="Rumah Tangga Squad">
                             <h3>Divisi RumahTangga</h3>
                             <p>Divisi Minat Bakat (Rumah Tangga) yang berorientasi pada
@@ -254,7 +254,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-perekonomian.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverEkonomi.png') }} class="img-fluid"
                                 alt="Perekonomian Squad">
                             <h3>Divisi Perekonomian</h3>
                             <p>Divisi Perekonomian yang berorientasi pada kesejahteraan BEM Fasilkom UNEJ melalui kegiatan
@@ -269,36 +269,64 @@
         </section><!-- End Values Section -->
 
         <!-- ======= Team Section ======= -->
-        <section id="team" class="team">
+        <section id="values" class="values">
 
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h2>STRUKTUR</h2>
+                    <h2>Badan Pengawas harian</h2>
                     <p>KABINET NAVARATNA</p>
                 </header>
 
-                <div class="row gy-4">
-                    @foreach ($members as $member)
-                        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                            data-toggle="tooltip" title="{{ $member->name }}">
-                            <div class="member">
-                                <div class="member-img">
-                                    <img src={{ asset('landing2/assets/img/member/' . $member->thumbnail) }}
-                                        class="img-fluid" alt="{{ $member->name }}">
-                                    {{-- <div class="social">
-                <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
-                <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-                </div> --}}
-                                </div>
-                                <div class="member-info">
-                                    <h4 class="text-truncate">{{ $member->name }}</h4>
-                                    <span>{{ $member->position . ' ' . $member->division }}</span>
-                                </div>
-                            </div>
+                <div class="row">
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/zuam.png') }} class="img-fluid"
+                                alt="Ketua">
                         </div>
-                    @endforeach
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/dejan.png') }} class="img-fluid"
+                                alt="Wakil">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/tiay.png') }} class="img-fluid"
+                                alt="Sekre1">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/risma.png') }} class="img-fluid"
+                                alt="Sekre2">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/adel.png') }} class="img-fluid"
+                                alt="Bend1">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/linda.png') }} class="img-fluid"
+                                alt="Bend2">
+                        </div>
+                    </div>
+
                 </div>
+
+            </div>
+
+        </section>
 
             </div>
 
