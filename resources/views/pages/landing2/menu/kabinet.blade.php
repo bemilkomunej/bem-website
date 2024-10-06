@@ -47,22 +47,18 @@
                                 <div class="col-md-12 icon-box" data-aos="fade-up">
                                     <!-- <i class="ri-line-chart-line"></i> -->
                                     <div class="feature-box">
-                                        <h4>Sandyakala</h4>
+                                        <h4>Navaratna</h4>
                                         <hr>
-                                        <p>Sandyakala mengandung arti 'pertemuan waktu', yakni perpaduan
-                                            kekuatan besar antara UKM, ORMAWA, dan komunitas di FASILKOM, sehingga BEM bisa
-                                            menjadi wadah kesatuan bagi UKM ORMAWA FASILKOM sebagai landasan berpikir untuk
-                                            melangkah bersinergi mencapai tujuan. </p>
+                                        <p>Merupakan perwujudan dari nama kabinet “Navaratna” yang mana Ratna berarti Permata bersinar sebagai simbol keberanian dan kekuasaan. Sebagai pemimpin yang memiliki keberanian untuk mengambil keputusan dan kekuatan untuk mengarahkan organisasi ke arah yang benar. </p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="100">
                                     <!-- <i class="ri-stack-line"></i> -->
                                     <div class="feature-box">
-                                        <h4>Bentuk Angka 8</h4>
+                                        <h4>Bentuk Diamond</h4>
                                         <hr>
-                                        <p>Bentuk logo yang menyerupai angka 8 melambangkan BEM FASILKOM sekarang telah
-                                            memasuki periode ke-8.</p>
+                                        <p>Slicing diamond yang membentuk angka 9 yang melambangkan kabinet ke-9 Bem Fasilkom Unej dan juga nama “Nava” yang berarti 9 dan bentuk diamond Melambangkan permata Sesuai dengan nama kabinet “ratna” yang berarti permata</p>
                                     </div>
                                 </div>
 
@@ -70,7 +66,7 @@
                         </div>
                         <div class="col-xl-4 text-center align-self-center" data-aos="fade-right" data-aos-delay="100">
                             <div class="card">
-                                <img src={{ asset('landing2/assets/img/sandyakala/logos-bem.png') }} class="img-fluid p-4"
+                                <img src={{ asset('landing2/assets/img/navaratna/logos.png') }} class="img-fluid p-4"
                                     alt="Logo Kabine">
                             </div>
                         </div>
@@ -80,21 +76,18 @@
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="400">
                                     <div class="feature-box">
                                         <!-- <i class="ri-command-line"></i> -->
-                                        <h4>Huruf S</h4>
+                                        <h4>7 Susun Segitiga</h4>
                                         <hr>
-                                        <p>Bentuk siluet huruf 'S' dan angka 8 merujuk pada nama kabinet yaitu Sandyakala
-                                            yang merupakan kabinet ke-8. Terdapat logo BEM yang diikuti 6 titik yang
-                                            memiliki arti jumlah divisi di BEM FASILOKM UNEJ.</p>
+                                        <p>Susunan 7 Segitiga yang membentuk diamon melambangkan 6 divisi + BPH pada bem fasilkom yang bersatu untuk saling melengkapi setiap elemen bem Fasilkom</p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12 icon-box" data-aos="fade-up" data-aos-delay="500">
                                     <!-- <i class="ri-radar-line"></i> -->
                                     <div class="feature-box">
-                                        <h4>Warna Cream & Magenta</h4>
+                                        <h4>Warna Shinning Purple</h4>
                                         <hr>
-                                        <p>Dalam keseluruhan filosofi warna cream & magenta dapat dipahami sebagai
-                                            representasi organisasi yang kreatif, inovatif, dan penuh semangat.</p>
+                                        <p>Dalam keseluruhan filosofi ungu merupakan representasi organisasi yang kreatif, inovatif, bertransformasi dan penuh semangat.</p>
                                     </div>
                                 </div>
 
@@ -111,7 +104,7 @@
 
         <!-- Banner Section -->
         <section class="banner">
-            <img src={{ asset('landing2/assets/img/sandyakala/visi-misi-2023.png') }} alt="banner visi misi">
+            <img src={{ asset('landing2/assets/img/navaratna/visi-misi.png') }} alt="banner visi misi">
         </section>
         <!-- End Banner Section -->
 
@@ -139,7 +132,7 @@
                     </div>
                     <div class="col-md-12 col-lg-8">
                         <div class="content_visi_kabinet_description border-bottom border-secondary">
-                            <p class="fw-bold text-white">Menjadikan BEM FASILKOM UNEJ sebagai organisasi yang kompeten,
+                            <p class="fw-bold">Menjadikan BEM FASILKOM UNEJ sebagai organisasi yang kompeten,
                                 berintegritas, intreaktif, dan adaptif selaras terhadap seluruh elemen yang ada di Fakultas
                                 Ilmu Komputer untuk meciptakan Fakultas Ilmu Komputer yang lebih sinergis.</p>
                         </div>
@@ -166,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-8">
-                        <ol class="fw-bold text-white">
+                        <ol class="fw-bold">
                             <li>
                                 <p>Membangun internal BEM FASILKOM UNEJ yang berdasarkan kekeluargaan dan IMTAQ; </p>
                             </li>
@@ -207,7 +200,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-psdm.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverPsdm.png') }} class="img-fluid"
                                 alt="PSDM Squad">
                             <h3>Divisi PSDM</h3>
                             <p>Divisi Pengembangan Sumber Daya Mahasiswa berorientasi pada potensi manajerial dan
@@ -217,7 +210,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-kominfo.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverKominfo.png') }} class="img-fluid"
                                 alt="Kominfo Squad">
                             <h3>Divisi KOMINFO</h3>
                             <p>Divisi Komunikasi dan Informasi yang berorientasi pada komunikasi, mengelola informasi di
@@ -228,7 +221,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-adkesma.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverAdkesma.png') }} class="img-fluid"
                                 alt="Adkesma Squad">
                             <h3>Divisi ADKESMA</h3>
                             <p>Divisi Advokasi dan Kesatuan Mahasiswa yang berorientasi pada persatuan
@@ -238,7 +231,7 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-luardalam.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverLuarDalam.png') }} class="img-fluid"
                                 alt="Luar Dalam Squad">
                             <h3>Divisi LuarDalam</h3>
                             <p>Divisi Luar Dalam yang berorientasi pada memperkenalkan Fasilkom,
@@ -250,7 +243,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-rt.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverRt.png') }} class="img-fluid"
                                 alt="Rumah Tangga Squad">
                             <h3>Divisi RumahTangga</h3>
                             <p>Divisi Minat Bakat (Rumah Tangga) yang berorientasi pada
@@ -261,7 +254,7 @@
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <img src={{ asset('landing2/assets/img/sandyakala/cover-perekonomian.png') }} class="img-fluid"
+                            <img src={{ asset('landing2/assets/img/navaratna/CoverEkonomi.png') }} class="img-fluid"
                                 alt="Perekonomian Squad">
                             <h3>Divisi Perekonomian</h3>
                             <p>Divisi Perekonomian yang berorientasi pada kesejahteraan BEM Fasilkom UNEJ melalui kegiatan
@@ -276,36 +269,64 @@
         </section><!-- End Values Section -->
 
         <!-- ======= Team Section ======= -->
-        <section id="team" class="team">
+        <section id="values" class="values">
 
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h2>STRUKTUR</h2>
-                    <p>KABINET SANDYAKALA</p>
+                    <h2>Badan Pengawas harian</h2>
+                    <p>KABINET NAVARATNA</p>
                 </header>
 
-                <div class="row gy-4">
-                    @foreach ($members as $member)
-                        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                            data-toggle="tooltip" title="{{ $member->name }}">
-                            <div class="member">
-                                <div class="member-img">
-                                    <img src={{ asset('landing2/assets/img/member/' . $member->thumbnail) }}
-                                        class="img-fluid" alt="{{ $member->name }}">
-                                    {{-- <div class="social">
-                <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
-                <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-                </div> --}}
-                                </div>
-                                <div class="member-info">
-                                    <h4 class="text-truncate">{{ $member->name }}</h4>
-                                    <span>{{ $member->position . ' ' . $member->division }}</span>
-                                </div>
-                            </div>
+                <div class="row">
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/zuam.png') }} class="img-fluid"
+                                alt="Ketua">
                         </div>
-                    @endforeach
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/dejan.png') }} class="img-fluid"
+                                alt="Wakil">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/tiay.png') }} class="img-fluid"
+                                alt="Sekre1">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/risma.png') }} class="img-fluid"
+                                alt="Sekre2">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/adel.png') }} class="img-fluid"
+                                alt="Bend1">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src={{ asset('landing2/assets/img/navaratna/team/bph/linda.png') }} class="img-fluid"
+                                alt="Bend2">
+                        </div>
+                    </div>
+
                 </div>
+
+            </div>
+
+        </section>
 
             </div>
 

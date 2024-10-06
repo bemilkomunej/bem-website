@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src={{ asset('landing2/assets/img/sandyakala/cover-luardalam.png') }} class="img-fluid"
+                    <img src={{ asset('landing2/assets/img/navaratna/CoverLuarDalam.png') }} class="img-fluid"
                         alt="">
                 </div>
             </div>
@@ -35,7 +35,7 @@
 
                 <header class="section-header">
                     <h2>PROKER</h2>
-                    <p>Program Kerja PSDM</p>
+                    <p>Program Kerja Luar Dalam</p>
                 </header>
 
                 <div class="row gy-4 justify-content-center">
@@ -68,9 +68,9 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-box green">
                             <i class="ri-discuss-line icon"></i>
-                            <h3>Semnas</h3>
-                            <p>Menambah wawasan mahasiswa Fakultas Ilmu Komputer Universitas Jember dan masyarakat umum
-                                tentang Era Society 5.0 di bidang IT</p>
+                            <h3>Sarasehan</h3>
+                            <p>Sarasehan merupakan salah satu program kerja divisi kominfo yang bertujuan untuk diskusi
+                            bersama dengan bem luar fasilkom</p>
                             <a href="https://www.instagram.com/semnasfasilkom/" class="read-more"><span>Selengkapnya</span>
                                 <i class="bi bi-arrow-right"></i></a>
                         </div>
@@ -84,40 +84,51 @@
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team">
+    <div class="container" data-aos="fade-up">
 
-            <div class="container" data-aos="fade-up">
+        <header class="section-header">
+            <h2>ANGGOTA</h2>
+            <p>Daftar Anggota Perekonomian</p>
+        </header>
 
-                <header class="section-header">
-                    <h2>ANGGOTA</h2>
-                    <p>Daftar Anggota Luar Dalam</p>
-                </header>
-
-                <div class="row gy-4">
-                    @foreach ($members as $member)
-                        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                            data-toggle="tooltip" title="{{ $member->name }}">
-                            <div class="member">
-                                <div class="member-img">
-                                    <img src={{ asset('landing2/assets/img/member/' . $member->thumbnail) }}
-                                        class="img-fluid" alt="{{ $member->name }}">
-                                    {{-- <div class="social">
-              <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
-                            <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-                        </div> --}}
-                                </div>
-                                <div class="member-info">
-                                    <h4 class="text-truncate">{{ $member->name }}</h4>
-                                    <span>{{ $member->position . ' ' . $member->division }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
+        <div class="row members-container">
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/rozika.png" alt="Member 1">
                 </div>
-
-
             </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/hana.png" alt="Member 2">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/dimas.png")" alt="Member 4">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/monic.png")" alt="Member 4">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/farda.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/melinda.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/luardalam/evi.png">
+                </div>
+            </div>
+        </div>
 
-        </section><!-- End Team Section -->
+    </div>
     </main>
 @endsection

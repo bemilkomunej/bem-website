@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src={{ asset('landing2/assets/img/sandyakala/cover-kominfo.png') }} class="img-fluid"
+                    <img src={{ asset('landing2/assets/img/navaratna/CoverKominfo.png') }} class="img-fluid"
                         alt="">
                 </div>
             </div>
@@ -42,9 +42,8 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-box blue">
                             <i class="ri-discuss-line icon"></i>
-                            <h3>Sarasehan</h3>
-                            <p>Sarasehan merupakan salah satu program kerja divisi kominfo yang bertujuan untuk diskusi
-                                bersama dengan bem luar fasilkom</p>
+                            <h3>BISIK</h3>
+                            <p>Bisik merupakan program kerja yang diadakan sebagai sarana pengembangan potensi dan bakat mahasiswa dalam bentuk podcast</p>
                             <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
@@ -53,10 +52,18 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-box orange">
                             <i class="ri-discuss-line icon"></i>
-                            <h3>Study Excursie</h3>
-                            <p>kegiatan yang dapat menambah informasi terkait standar kompetensi yang dipersyaratkan dan
-                                diskusi dengan para praktisi TI terkait dengan kurikulum dan proses pembelajaran yang
-                                diperlukan dalam menyiapkan mahasiswa untuk memenuhi kebutuhan industri TI.</p>
+                            <h3>Mading Fasilkom</h3>
+                            <p>Mading Fasilkom merupakan program kerja pengelolaan mading fakultas ilmu komputer sebagai sarana penyebaran informasi dari internal maupun eksternal.</p>
+                            <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-box green">
+                            <i class="ri-discuss-line icon"></i>
+                            <h3>Pengelolaan Sosial Media</h3>
+                            <p>Pengelolaan sosial media merupakan program kerja yang bertugas untuk mengelola konten dari sosial media bem fasilkom unej</p>
                             <a href="https://wa.me/+623891620532" class="read-more"><span>Selengkapnya</span> <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
@@ -106,39 +113,71 @@
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team">
+    <div class="container" data-aos="fade-up">
 
-            <div class="container" data-aos="fade-up">
+        <header class="section-header">
+            <h2>ANGGOTA</h2>
+            <p>Daftar Anggota Kominfo</p>
+        </header>
 
-                <header class="section-header">
-                    <h2>ANGGOTA</h2>
-                    <p>Daftar Anggota Kominfo</p>
-                </header>
-
-                <div class="row gy-4">
-                    @foreach ($members as $member)
-                        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-                            data-toggle="tooltip" title="{{ $member->name }}">
-                            <div class="member">
-                                <div class="member-img">
-                                    <img src={{ asset('landing2/assets/img/member/' . $member->thumbnail) }}
-                                        class="img-fluid" alt="{{ $member->name }}">
-                                    {{-- <div class="social">
-                                <a href="{{ $member->instagram }}"><i class="bi bi-instagram"></i></a>
-                                <a href="{{ $member->linkedin }}"><i class="bi bi-linkedin"></i></a>
-                            </div> --}}
-                                </div>
-                                <div class="member-info">
-                                    <h4 class="text-truncate">{{ $member->name }}</h4>
-                                    <span>{{ $member->position . ' ' . $member->division }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
+        <div class="row members-container">
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/rio.png" alt="Member 1">
                 </div>
-
             </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/amel.png" alt="Member 2">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/devina.png")" alt="Member 4">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/dinar.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/lia.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/natan.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/maul.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/yanu.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/hafiz.png">
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-img">
+                    <img src="landing2/assets/img/navaratna/team/kominfo/danu.png">
+                </div>
+            </div>
+        </div>
 
-        </section><!-- End Team Section -->
+    </div>
+</section>
+
+
+        <!-- End Team Section -->
     </main>
 @endsection
+

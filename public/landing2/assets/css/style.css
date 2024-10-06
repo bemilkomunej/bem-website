@@ -10,8 +10,8 @@
 --------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
-    --primary-color: #FCCE95;
-    --secondary-color: #FE579C;
+    --primary-color: #680F96;
+    --secondary-color: #616161;
     /* --primary-color: #4s154f1;
   --secondary-color: #0s12970; */
 }
@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-    color: #FF4692;
+    color: #680F96;
     text-decoration: none;
 }
 
@@ -135,7 +135,7 @@ section {
 .breadcrumbs ol li+li::before {
     display: inline-block;
     padding-right: 10px;
-    color: #fb86b7;
+    color: #616161;
     content: "/";
 }
 
@@ -163,7 +163,7 @@ section {
 }
 
 .back-to-top:hover {
-    background: #FF4692;
+    background: #680F96;
     color: #fff;
 }
 
@@ -254,7 +254,7 @@ header.header-scrolled.landing .logo span {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #e9307d;
+    color: #680F96;
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -535,7 +535,7 @@ header.header-scrolled.landing .logo span {
     transition: 0.5s;
     color: #fff;
     background: var(--primary-color);
-    box-shadow: 0px 5px 30px rgba(246, 236, 94, 0.4);
+    box-shadow: 0px 5px 30px rgba(195, 94, 246, 0.4);
 }
 
 .hero .btn-get-started span {
@@ -635,7 +635,7 @@ header.header-scrolled.landing .logo span {
     transition: 0.5s;
     color: #fff;
     background: var(--primary-color);
-    box-shadow: 0px 5px 30px rgba(246, 236, 94, 0.4);
+    box-shadow: 0px 5px 30px rgba(195, 94, 246, 0.4);
 }
 
 .about .btn-read-more span {
@@ -1490,7 +1490,7 @@ header.header-scrolled.landing .logo span {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(../img/team-shape.svg) no-repeat center bottom;
+    /* background: url(../img/team-shape.svg) no-repeat center bottom; */
     background-size: contain;
     z-index: 1;
 }
@@ -2559,7 +2559,7 @@ div.entry-content p img.note-float-center:parent {
 --------------------------------------------------------------*/
 #visi_misi {
     /* background-color: rgb(72 83 114 / 10%); */
-    background-image: linear-gradient(#ffebdc, var(--secondary-color));
+    background-image: linear-gradient(#e1e1e1, #FFFFFF);
     padding: 0;
 
 }
@@ -2717,3 +2717,50 @@ div.entry-content p img.note-float-center:parent {
     bottom: -128px;
     animation-delay: 32s;
 }
+
+
+.members-container {
+    display: flex;
+    justify-content: space-between; /* Membuat gambar berjarak sama */
+    flex-wrap: nowrap; /* Mencegah gambar berpindah ke baris berikutnya */
+}
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus item ke baris berikutnya */
+    justify-content: space-between; /* Memberi jarak antara item */
+}
+
+.member {
+    flex: 0 0 18%; /* Setiap anggota memiliki lebar 18% dari container untuk memuat 5 item per baris dengan spasi */
+    height: 350px; /* Tinggi setiap kotak */
+    margin-bottom: 20px; /* Jarak antar baris */
+}
+
+.member-img img {
+    width: 100%; /* Menyesuaikan gambar dengan lebar kotak */
+    height: 100%; /* Menyesuaikan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+/* Tampilan pada layar medium (tablet) - 3 elemen per baris */
+@media (max-width: 1024px) {
+    .member {
+        flex: 0 0 30%; /* Setiap elemen memiliki lebar 30% pada tablet */
+    }
+}
+
+/* Tampilan pada layar kecil (ponsel) - 2 elemen per baris */
+@media (max-width: 768px) {
+    .member {
+        flex: 0 0 45%; /* Setiap elemen memiliki lebar 45% pada ponsel */
+    }
+}
+
+/* Tampilan pada layar sangat kecil - 1 elemen per baris */
+@media (max-width: 480px) {
+    .member {
+        flex: 0 0 100%; /* Setiap elemen memiliki lebar 100% pada layar kecil */
+    }
+}
+
